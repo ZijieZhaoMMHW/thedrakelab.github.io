@@ -139,6 +139,16 @@ The Publications page is **generated from ORCID** — you usually don't need to 
 
 ---
 
+## Henri's CV
+
+The CV linked from Henri's profile is **compiled from his Overleaf project** every time the site is deployed — on each merge to `main` and every Monday morning. (To refresh it right away: **Actions → Deploy site → Run workflow**.)
+
+- The deploy workflow clones the Overleaf project with the `OVERLEAF_TOKEN` secret, compiles `Drake_main_CV.tex` with pdfLaTeX, and publishes the result as `/files/Drake_CV.pdf`. The LaTeX source never enters this repository.
+- `public/files/Drake_CV.pdf` in the repo is only a **fallback**. If Overleaf can't be reached, the token has expired, or the LaTeX doesn't compile, the site is still deployed with that copy and the workflow run shows a "CV not updated from Overleaf" warning.
+- The project ID and main file name are set at the top of `.github/workflows/deploy.yml`.
+
+---
+
 ## Images
 
 - People photos: `public/images/people/<firstname-lastname>.jpg` — square, at least 400×400 px, under 500 KB.
@@ -182,10 +192,10 @@ data/
   publications-exclude.txt   DOIs to hide
 public/
   images/        photos, figures, videos
-  files/         PDFs (CV, position ads)
+  files/         PDFs (position ads, fallback copy of the CV)
 scripts/         publication updater, link checker, one-time WordPress media import
 src/             page templates and styles (rarely needs editing)
-.github/workflows/  deploy (on merge), PR check, weekly publication update
+.github/workflows/  deploy (on merge + weekly, compiles the CV), PR check, weekly publication update
 ```
 
 ---
@@ -195,8 +205,9 @@ src/             page templates and styles (rarely needs editing)
 1. Create the GitHub repository and push this folder to its `main` branch.
 2. **Settings → Pages → Build and deployment → Source: GitHub Actions.**
 3. **Settings → Actions → General → Workflow permissions:** check **"Allow GitHub Actions to create and approve pull requests"** (needed for the weekly publications PR).
-4. Optional: **Settings → Branches → Add rule for `main`** requiring the "Check pull request" status and one review, so all changes go through PRs.
-5. Optional: add a custom domain under **Settings → Pages**. The site handles both `https://<owner>.github.io/<repo>/` and custom domains automatically.
+4. For the automatic CV: in Overleaf, **Account Settings → Git Integration → Generate token**, then add it here under **Settings → Secrets and variables → Actions → New repository secret** with the name `OVERLEAF_TOKEN`. Overleaf tokens expire, so generate a new one and update the secret when the deploy run warns that the CV was not updated.
+5. Optional: **Settings → Branches → Add rule for `main`** requiring the "Check pull request" status and one review, so all changes go through PRs.
+6. Optional: add a custom domain under **Settings → Pages**. The site handles both `https://<owner>.github.io/<repo>/` and custom domains automatically.
 
 ---
 

@@ -1,10 +1,19 @@
-# Build the site and publish it to GitHub Pages whenever main changes.
+# Build the site and publish it to GitHub Pages whenever main changes, and once a week
+# so that Henri's CV (compiled from his Overleaf project) stays current.
 name: Deploy site
 
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '43 15 * * 1'   # Mondays, 15:43 UTC (7:43 / 8:43 am Pacific)
   workflow_dispatch:
+
+env:
+  # Overleaf project that holds the CV source. The ID is useless without the OVERLEAF_TOKEN secret.
+  OVERLEAF_CV_PROJECT_ID: 5c0abf24aa853a06e4fb087f
+  CV_MAIN_TEX: Drake_main_CV.tex
+  CV_PDF: public/files/Drake_CV.pdf
 
 permissions:
   contents: read
@@ -27,6 +36,53 @@ jobs:
       - id: pages
         uses: actions/configure-pages@v5
       - run: npm ci
+
+      # --- CV: fetch the LaTeX source from Overleaf, compile it, and replace the committed PDF. ---
+      # Every step here is allowed to fail: the site then ships the PDF that is committed in the
+      # repo, and the run shows a warning.
+      - name: Fetch CV source from Overleaf
+        id: cv_source
+        continue-on-error: true
+        env:
+          OVERLEAF_TOKEN: ${{ secrets.OVERLEAF_TOKEN }}
+        run: |
+          if [ -z "$OVERLEAF_TOKEN" ]; then
+            echo "The OVERLEAF_TOKEN secret is not set."
+            exit 1
+          fi
+          git clone --quiet --depth 1 \
+            "https://git:${OVERLEAF_TOKEN}@git.overleaf.com/${OVERLEAF_CV_PROJECT_ID}" .cv-src
+          rm -rf .cv-src/.git   # drops the token before any third-party action runs
+          [ -f ".cv-src/$CV_MAIN_TEX" ] || { echo "$CV_MAIN_TEX not found in the Overleaf project."; exit 1; }
+
+      - name: Compile CV (pdfLaTeX)
+        id: cv_compile
+        if: steps.cv_source.outcome == 'success'
+        continue-on-error: true
+        uses: xu-cheng/latex-action@v4
+        with:
+          working_directory: .cv-src
+          root_file: ${{ env.CV_MAIN_TEX }}
+
+      - name: Use the freshly compiled CV
+        id: cv_install
+        if: steps.cv_compile.outcome == 'success'
+        continue-on-error: true
+        run: |
+          pdf=".cv-src/${CV_MAIN_TEX%.tex}.pdf"
+          # Refuse anything that is not a real PDF.
+          head -c 5 "$pdf" | grep -q '%PDF-'
+          cp "$pdf" "$CV_PDF"
+          echo "CV updated from Overleaf ($(du -h "$CV_PDF" | cut -f1))."
+
+      - name: Warn if the CV was not updated
+        if: steps.cv_install.outcome != 'success'
+        run: echo "::warning title=CV not updated from Overleaf::Publishing the copy committed at $CV_PDF instead. See the CV steps above (an expired OVERLEAF_TOKEN is the usual cause)."
+
+      - name: Remove CV source
+        if: always()
+        run: sudo rm -rf .cv-src
+
       - run: npm run build
         env:
           SITE_URL: ${{ steps.pages.outputs.origin }}

@@ -16,7 +16,7 @@ The site is complete and verified on Henri's Mac. Everything below has been buil
   and `scripts/update-publications.mjs` is the CLI wrapper. `data/publications.json` holds 28 works
   (18 papers, 4 preprints, 6 data/software), confirmed current against live ORCID on 2026-11-18.
 - Publications page with search, filters (type tab / year / group member), bold group members, and Copy BibTeX.
-- Workflows: `deploy.yml` (Pages on push to main), `check.yml` (PR build + link check + artifact),
+- Workflows: `deploy.yml` (Pages on push to main and weekly; also compiles the CV from Overleaf), `check.yml` (PR build + link check + artifact),
   `update-publications.yml` (weekly ORCID → PR via peter-evans/create-pull-request).
 - `scripts/check-links.mjs` verifies internal links and images in `dist/`.
 - **Media imported** via `scripts/import-legacy-media.sh`: 24 files (10 people photos, 3 group photos,
@@ -71,6 +71,10 @@ asks. Then set Pages source to GitHub Actions, and allow Actions to create PRs
   "Correction/Erratum" DOIs are skipped when choosing the main DOI. Author metadata comes from doi.org CSL-JSON
   content negotiation and is cached by DOI, so only new DOIs are fetched. `publications-extra.yaml` and
   `publications-exclude.txt` are applied at build time in `src/lib/publications.ts`, not by the updater.
+- CV: `deploy.yml` clones Henri's Overleaf project (secret `OVERLEAF_TOKEN`), compiles `Drake_main_CV.tex` with
+  `xu-cheng/latex-action`, and overwrites `public/files/Drake_CV.pdf` in the build only (never committed). The
+  CV steps are `continue-on-error`; on failure the committed PDF ships and the run shows a warning. Runs on push
+  to main and weekly. Not yet exercised on GitHub (written 2026-11-17, before the repo had a remote).
 - Group-member bolding (`matchMember`) matches by ORCID iD, then by family name + first initial against `content/people/`.
 - Use `import { load } from 'js-yaml'`. There is no default export, and the build breaks with the default import.
 
