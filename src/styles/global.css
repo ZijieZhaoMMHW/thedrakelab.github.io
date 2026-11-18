@@ -70,6 +70,9 @@ figcaption, .caption { color: var(--muted); font-size: .9rem; margin-top: .4rem;
 .section-nav a:hover, .section-nav a:focus-visible { background: var(--uci-blue); border-color: var(--uci-blue); color: #fff; }
 /* keep a jumped-to heading clear of the top of the viewport */
 .prose h2 { scroll-margin-top: 1rem; }
+/* dividers between the sections of a `section_nav: true` page */
+.prose.sectioned h2 { position: relative; margin-top: 3.25rem; padding-top: 1.75rem; border-top: 1px solid var(--line); }
+.prose.sectioned h2::before { content: ""; position: absolute; top: -1px; left: 0; width: 3rem; height: 3px; background: var(--uci-blue); }
 
 /* Cards & grids */
 .grid { display: grid; gap: 1.25rem; }
@@ -108,10 +111,16 @@ a.card:hover { box-shadow: 0 6px 18px rgba(15,36,51,.1); transform: translateY(-
 .pub-tabs button[aria-pressed="true"] { background: var(--accent); color: #fff; border-color: var(--accent); }
 .pub-tabs button[aria-pressed="true"] .count { color: #cfe2f3; }
 .pub-list { list-style: none; padding: 0; margin: 0; }
-.pub { padding: .85rem 0; border-bottom: 1px solid var(--line); }
+.pub { position: relative; padding: .85rem 0 .85rem .9rem; border-bottom: 1px solid var(--line); }
 .pub .title { font-weight: 600; }
 .pub .authors { font-size: .93rem; color: #33424f; }
 .pub .authors b { color: var(--ink); }
+.pub .authors .dagger { color: var(--uci-blue); font-weight: 400; padding-left: .5px; }
+/* first author is in the group: a short rail, inset so consecutive entries stay distinct */
+.pub.led::before { content: ""; position: absolute; left: 0; top: .7rem; bottom: .7rem; width: 3px; border-radius: 2px; background: var(--uci-blue); }
+.pub-legend { display: flex; flex-wrap: wrap; gap: .3rem 1.4rem; font-size: .88rem; color: var(--muted); margin: .4rem 0 0; }
+.pub-legend b { color: var(--ink); font-weight: 600; }
+.pub-legend .key-led::before { content: ""; display: inline-block; width: 3px; height: .95em; border-radius: 2px; background: var(--uci-blue); margin-right: .45rem; vertical-align: -.12em; }
 .pub .venue { font-size: .93rem; color: var(--muted); }
 .pub .actions { font-size: .85rem; margin-top: .25rem; display: flex; gap: .8rem; flex-wrap: wrap; }
 .pub .actions button { background: none; border: none; padding: 0; color: var(--accent); cursor: pointer; font-size: .85rem; text-decoration: underline; }

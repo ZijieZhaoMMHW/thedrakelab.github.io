@@ -18,5 +18,5 @@ const sections = entry.data.section_nav ? headings.filter((h) => h.depth === 2) 
       {sections.map((h) => <a href={`#${h.slug}`}>{h.text}</a>)}
     </nav>
   )}
-  <div class="prose"><Content /></div>
+  <div class:list={['prose', entry.data.section_nav && 'sectioned']}><Content /></div>
 </Base>

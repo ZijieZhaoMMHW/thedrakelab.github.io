@@ -11,6 +11,8 @@ const counts = { paper: 0, preprint: 0, data: 0 };
 works.forEach((w) => counts[tabOf(w.kind) as keyof typeof counts]++);
 const years = [...new Set(works.map((w) => w.year).filter(Boolean))].sort((a, b) => b! - a!);
 const memberIds = new Set<string>();
+const piId = people.find((p) => p.data.role === 'pi')?.id;
+const piName = people.find((p) => p.data.role === 'pi')?.data.name ?? 'the PI';
 const rows = works.map((w) => {
   const authors = w.authors.map((a) => {
     const m = matchMember(a, people);
@@ -20,6 +22,7 @@ const rows = works.map((w) => {
   const cite = [w.venue, w.volume && `${w.volume}${w.issue ? `(${w.issue})` : ''}`, w.pages].filter(Boolean).join(', ');
   return {
     w, authors, cite, tab: tabOf(w.kind),
+    led: !!authors[0]?.member,   // first author is a group member
     members: authors.map((a) => a.member).filter(Boolean).join(' '),
     search: [w.title, w.venue, w.doi, ...w.authors.map((a) => `${a.given} ${a.family}`)].join(' ').toLowerCase(),
   };
@@ -29,7 +32,12 @@ const kindLabel: Record<string, string> = { data: 'Dataset', software: 'Software
 ---
 <Base title="Publications" description="Publications, preprints, datasets, and code from the Ocean and Climate Dynamics group at UC Irvine.">
   <h1>Publications</h1>
-  <p class="muted">Updated automatically from <a href="https://orcid.org/0000-0003-0135-0814">ORCID</a>. Group members are in <b>bold</b>. See also <a href="https://scholar.google.com/citations?hl=en&user=PToRK3cAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>.</p>
+  <p class="muted">Updated automatically from <a href="https://orcid.org/0000-0003-0135-0814">ORCID</a>. See also <a href="https://scholar.google.com/citations?hl=en&user=PToRK3cAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>.</p>
+  <p class="pub-legend">
+    <span><b>{piName}</b></span>
+    <span><b>Group member<span class="dagger">&#8224;</span></b></span>
+    <span class="key-led">First author from the group</span>
+  </p>
 
   <div class="pub-controls" role="search">
     <div class="pub-tabs" role="group" aria-label="Type">
@@ -51,14 +59,18 @@ const kindLabel: Record<string, string> = { data: 'Dataset', software: 'Software
 
   <p id="pub-count" class="count" aria-live="polite"></p>
   <ol class="pub-list" id="pub-list">
-    {rows.map(({ w, authors, cite, tab, members, search }) => (
-      <li class="pub" data-tab={tab} data-year={w.year ?? ''} data-members={members} data-search={search}>
+    {rows.map(({ w, authors, cite, tab, members, search, led }) => (
+      <li class:list={['pub', led && 'led']} data-tab={tab} data-year={w.year ?? ''} data-members={members} data-search={search}>
         <div class="title">
           {w.url ? <a href={w.url}>{w.title}</a> : w.title}
           {kindLabel[w.kind] && <> <span class="tag">{kindLabel[w.kind]}</span></>}
         </div>
         <div class="authors">
-          {authors.map((a, i) => <>{i > 0 && ', '}{a.member ? <b>{a.name}</b> : a.name}</>)}
+          {authors.map((a, i) => <>{i > 0 && ', '}{
+            a.member
+              ? <b>{a.name}{a.member !== piId && <span class="dagger">&#8224;</span>}</b>
+              : a.name
+          }</>)}
         </div>
         <div class="venue">{w.year && <>({w.year}) </>}<em>{cite}</em></div>
         <div class="actions">
