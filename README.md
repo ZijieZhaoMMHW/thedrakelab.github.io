@@ -63,42 +63,6 @@ MOM6 simulations. Before joining the group she ... (2–5 sentences, third perso
 
 **Leaving the group?** Change `status: current` to `status: alumni`, and fill in `end:` and `next:`. Please don't delete your file — it moves you to the Alumni list automatically.
 
-### News & events — `content/news/YYYY-MM-DD-short-title.md`
-
-> **Note:** the News tab is currently hidden from the site navigation, so these pages are built but not
-> linked from anywhere. To bring it back, add `['News', 'news/']` to the `nav` list in `src/layouts/Base.astro`.
-
-```markdown
----
-title: Jane Doe receives NSF Graduate Research Fellowship
-date: 2026-04-02
-type: award            # paper | award | talk | event | outreach | news
-people: [jane-doe]     # optional: file names from content/people/
-link: https://...      # optional
----
-
-Congratulations to Jane on her NSF GRFP award! (One short paragraph is plenty.)
-
-![Optional image description](/images/news/2026-grfp.jpg)
-```
-
-For **upcoming events** (seminars, workshops), use `type: event` with the event date as `date:`. Future events show under "Upcoming events" on the News page and move into the regular list automatically once the date passes (the next time the site is rebuilt).
-
-### Standalone pages — `content/pages/<name>.md`
-
-These are the Overview (`home.md`), Opportunities, and Resources pages.
-
-```markdown
----
-title: Opportunities
-description: One sentence used for search engines and link previews.   # optional
-section_nav: true      # optional: show buttons at the top that jump to each "## " section
----
-```
-
-With `section_nav: true`, every `## ` heading on the page automatically becomes a button at the top — add,
-rename, or reorder a section and the buttons follow. No other setup is needed.
-
 ### Research projects — `content/projects/<short-name>.md`
 
 ```markdown
@@ -152,7 +116,6 @@ The CV linked from Henri's profile is **compiled from his Overleaf project** eve
 ## Images
 
 - People photos: `public/images/people/<firstname-lastname>.jpg` — square, at least 400×400 px, under 500 KB.
-- News images: `public/images/news/`
 - Project figures and videos: `public/images/projects/` (videos: `.mp4`, under ~10 MB)
 - Group photos: `public/images/group/`
 
@@ -183,7 +146,6 @@ npm run update-publications  # refresh data/publications.json from ORCID
 content/
   people/        one file per current or former group member
   projects/      one file per research area/project
-  news/          one file per news item or event
   pages/         home.md (mission + group photos), opportunities.md, resources.md
 data/
   publications.json          auto-generated from ORCID — do not edit
@@ -214,8 +176,7 @@ src/             page templates and styles (rarely needs editing)
 ## Style guidelines
 
 - Bios: third person, 2–5 sentences, focus on research (a fun fact at the end is welcome).
-- Dates: `YYYY-MM-DD` for news, `YYYY-MM` (or `YYYY`) for start/end.
+- Dates: `YYYY-MM` (or `YYYY`) for start/end.
 - File names: lowercase, hyphens instead of spaces, no special characters.
-- Keep news items short; link out for details.
 
 Questions? Open an issue on GitHub or ask Henri.

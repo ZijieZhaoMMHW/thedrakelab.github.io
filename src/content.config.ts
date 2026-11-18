@@ -42,18 +42,6 @@ const projects = defineCollection({
   }),
 });
 
-const news = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './content/news' }),
-  schema: z.object({
-    title: z.string(),
-    date: z.coerce.date(),
-    type: z.enum(['paper', 'award', 'talk', 'event', 'outreach', 'news']).default('news'),
-    people: z.array(z.string()).default([]),
-    link: z.string().url().nullish(),
-    image: z.string().nullish(),
-  }),
-});
-
 const pages = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './content/pages' }),
   schema: z.object({
@@ -65,4 +53,4 @@ const pages = defineCollection({
   }),
 });
 
-export const collections = { people, projects, news, pages };
+export const collections = { people, projects, pages };

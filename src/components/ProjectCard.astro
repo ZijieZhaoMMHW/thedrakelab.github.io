@@ -1,0 +1,19 @@
+---
+// A research project card. Used by both the Overview and the Research index so the
+// two can't drift apart — a project may supply an `image:` or a `video:`, or neither.
+import type { CollectionEntry } from 'astro:content';
+import { url } from '../lib/url';
+import { photoExists } from '../lib/people';
+interface Props { project: CollectionEntry<'projects'>; }
+const { project } = Astro.props;
+const d = project.data;
+const image = photoExists(d.image) ? d.image : null;
+const video = !image && photoExists(d.video) ? d.video : null;
+---
+<a class="card" href={url(`research/${project.id}/`)}>
+  {image && <img class="cover" src={url(image)} alt="" loading="lazy" />}
+  {video && <video class="cover" src={url(video)} muted loop autoplay playsinline></video>}
+  <p class="eyebrow">{d.short_title ?? 'Research'}</p>
+  <h3>{d.title}</h3>
+  <p class="muted">{d.summary}</p>
+</a>

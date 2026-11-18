@@ -22,11 +22,15 @@ Minimum requirements for joining our group are:
 
 The following additional qualifications are not necessary but will strengthen an application: experience analyzing ocean simulation data, running computational ocean or climate models, developing theoretical models, or analytically solving problems in geophysical fluid dynamics.
 
-You can learn more about our 5-year PhD program in Earth System Science – and the formal application process – here: [https://www.ess.uci.edu/phd-program](https://www.ess.uci.edu/phd-program).
+**How to apply:** Applications go through the [UCI Earth System Science PhD program](https://www.ess.uci.edu/phd-program), which lists the deadline, the required materials, and how admissions works. Name Henri in your statement of purpose if you would like to work with him — you can name other ESS faculty too, and doing so will not count against you.
+
+**Email before you apply.** You are welcome — encouraged — to write to Henri at [hfdrake@uci.edu](mailto:hfdrake@uci.edu) before submitting an application. A short email is plenty: a paragraph on what you have worked on, a paragraph on which of the projects above interests you and why, and your CV attached. You do not need to have read his papers, propose a thesis, or arrive with a polished pitch.
 
 ## Postdocs
 
-**Postdoctoral Scholar – Synchronous Ice Sheet–Earth System Modeling:** [https://recruit.ap.uci.edu/JPF10422](https://recruit.ap.uci.edu/JPF10422)
+**Postdoctoral Scholar – Synchronous Ice Sheet–Earth System Modeling:** [see the posting and apply](https://recruit.ap.uci.edu/JPF10422) (UC Recruit JPF10422).
+
+**How to apply:** apply through the posting above. Before you do, email Henri at [hfdrake@uci.edu](mailto:hfdrake@uci.edu) with your CV and a paragraph about what you would want to work on — it is the quickest way to find out whether the fit is right.
 
 **Postdoc fellowships:** Prospective postdocs are encouraged to apply to the independent research fellowships listed below, which fund the applicant to pursue an independent research program they develop themselves. Applicants interested in listing Henri as a faculty host/advisor are encouraged to reach out to him beforehand to ensure the project fits within the scope of the group and that we can provide the expertise and resources required for the project to be successful.
 
@@ -39,7 +43,7 @@ Note: Federal postdoc fellowship opportunities are currently in flux. Some may b
 
 ## Undergraduate Research Opportunities (UROPs)
 
-Research in the *Ocean and Climate Dynamics* group is computational or theoretical in nature, requiring mathematical techniques well beyond those covered by the ESS major requirements. Therefore, students interested in doing research in the group are encouraged to review the [UROP Research Roadmap](https://urop.uci.edu/research-roadmap/) and reach out to Prof. Drake by email as soon as this interest materializes so that he can provide recommendations for a path through the curriculum that will prepare them for success in research.
+Research in the *Ocean and Climate Dynamics* group is computational or theoretical in nature, requiring mathematical techniques well beyond those covered by the ESS major requirements. Therefore, students interested in doing research in the group are encouraged to review the [UROP Research Roadmap](https://urop.uci.edu/research-roadmap/) and reach out to Prof. Drake at [hfdrake@uci.edu](mailto:hfdrake@uci.edu) as soon as this interest materializes so that he can provide recommendations for a path through the curriculum that will prepare them for success in research.
 
 **Coursework expectations:** Undergraduate students doing research in the group are expected to have:
 

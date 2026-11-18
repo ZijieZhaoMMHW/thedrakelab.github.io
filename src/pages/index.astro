@@ -1,9 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
 import Media from '../components/Media.astro';
+import ProjectCard from '../components/ProjectCard.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 import { url } from '../lib/url';
-import { photoExists } from '../lib/people';
 
 const home = await getEntry('pages', 'home');
 if (!home) throw new Error('content/pages/home.md is missing');
@@ -18,15 +18,7 @@ const [latestPhoto, ...pastPhotos] = home.data.photos;
 
   <h2>Current research areas</h2>
   <div class="grid grid-3">
-    {projects.map((p) => (
-      <a class="card" href={url(`research/${p.id}/`)}>
-        {photoExists(p.data.image) && <img class="cover" src={url(p.data.image!)} alt="" loading="lazy" />}
-        {!photoExists(p.data.image) && photoExists(p.data.video) && <video class="cover" src={url(p.data.video!)} muted loop autoplay playsinline style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px"></video>}
-        <p class="eyebrow">{p.data.short_title ?? 'Research'}</p>
-        <h3>{p.data.title}</h3>
-        <p class="muted">{p.data.summary}</p>
-      </a>
-    ))}
+    {projects.map((p) => <ProjectCard project={p} />)}
   </div>
 
   {pastPhotos.length > 0 && <>

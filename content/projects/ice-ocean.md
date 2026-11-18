@@ -6,6 +6,10 @@ status: active
 order: 1
 video: /images/projects/ice-ocean-upwelling-trajectories.mp4
 caption: "Trajectories of warm Upper Circumpolar Deep Water as it upwells onto the Antarctic continental shelf, and eventually makes its way into ice shelf cavities to drive basal melting. [Source: [Drake et al. (2018), *Geophysical Research Letters*](https://doi.org/10.1002/2017GL076045)]"
+funding:
+  - "NSF CAREER (Office of Polar Programs), 2026-2031. PI: Drake. Feedbacks and Tipping Dynamics in Earth System Models with Interactive Ice Sheets."
+  - "Packard Fellowship for Science and Engineering, 2026-2031. PI: Drake. Nonlinear amplification of coastal city flooding by global climate feedbacks."
+  - "Hellman Fellows Fund, 2025. PI: Drake. Ocean currents and melting ice: Earth's climate tipping points."
 ---
 
 While global warming is caused by the accumulation of anthropogenic greenhouse gases in the atmosphere, over 90% of this excess heat is transferred into the ocean. The ocean does us a service by slowing climate change down in this way, but it comes at great cost: seawater becomes less dense as it warms, leading to rising sea levels that damage coastal infrastructure and displace coastal populations.

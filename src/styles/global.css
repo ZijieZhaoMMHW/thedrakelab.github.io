@@ -82,7 +82,7 @@ figcaption, .caption { color: var(--muted); font-size: .9rem; margin-top: .4rem;
 .card h3 { margin-top: .2rem; }
 a.card { text-decoration: none; color: inherit; display: block; transition: box-shadow .15s, transform .15s; }
 a.card:hover { box-shadow: 0 6px 18px rgba(15,36,51,.1); transform: translateY(-2px); color: inherit; }
-.card img.cover { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 6px; background: var(--bg-soft); }
+.card img.cover, .card video.cover { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 6px; background: var(--bg-soft); }
 
 /* People */
 .person { text-align: left; }
@@ -98,8 +98,6 @@ a.card:hover { box-shadow: 0 6px 18px rgba(15,36,51,.1); transform: translateY(-
 .alumni-list li { padding: .6rem 0; border-bottom: 1px solid var(--line); }
 
 /* News */
-.news-item { padding: 1rem 0; border-bottom: 1px solid var(--line); }
-.news-item h3 { margin: .2rem 0; }
 .tag { display: inline-block; font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; background: var(--bg-soft); color: var(--accent); border-radius: 4px; padding: .1rem .45rem; font-weight: 600; }
 
 /* Publications */

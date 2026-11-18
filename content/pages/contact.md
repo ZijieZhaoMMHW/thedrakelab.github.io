@@ -1,0 +1,35 @@
+---
+title: Contact
+description: How to reach the Ocean and Climate Dynamics group at UC Irvine, including enquiries from prospective students, collaborators, and journalists.
+section_nav: true
+---
+
+Henri F. Drake — <hfdrake@uci.edu>
+3212 Croul Hall, University of California, Irvine, Irvine, CA 92697-3100
+[Department of Earth System Science](https://www.ess.uci.edu/)
+
+## Prospective students and postdocs
+
+You are welcome to get in touch before you apply, and we would rather hear from you early than not at all.
+See the [Opportunities](/opportunities) page for what is currently open and what to put in your email.
+
+## Journalists and media
+
+Henri welcomes press enquiries and is glad to do background conversations, interviews, or a quick
+sanity-check on a paper you have been sent. If you are working to a same-day deadline, put **DEADLINE**
+and your time zone in the subject line.
+
+He can speak to: how the deep ocean circulates and mixes; how warm ocean water melts Antarctic and
+Greenland ice from below; sea level rise driven by ocean warming and ice loss; marine heatwaves; tipping
+points in ocean circulation and ice sheets; and how climate models are built, what they get right, and
+how well past projections have held up.
+
+He is **not** the right person for hurricanes and day-to-day weather, ocean ecology or fisheries, ocean
+acidification chemistry, or climate policy and economics — but he is happy to point you to colleagues who are.
+
+## Images and video
+
+Photographs, figures, and animations on this site may be reproduced with credit to "Henri F. Drake / UC
+Irvine", **unless a different source is named in the caption** — figures credited to a journal are that
+publisher's copyright and must be cleared with them. Higher-resolution headshots and video files are
+available on request.

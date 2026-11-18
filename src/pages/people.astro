@@ -4,21 +4,30 @@ import PersonCard from '../components/PersonCard.astro';
 import { getCollection } from 'astro:content';
 import { url } from '../lib/url';
 import { ROLE_LABELS, sortPeople } from '../lib/people';
+import { loadWorks, matchMember } from '../lib/publications';
 
 const people = (await getCollection('people')).sort(sortPeople);
 const current = people.filter((p) => p.data.status === 'current');
 const pis = current.filter((p) => p.data.role === 'pi');
 const members = current.filter((p) => p.data.role !== 'pi');
 const alumni = people.filter((p) => p.data.status === 'alumni');
+// Only link to the filtered publications view for people who actually appear on a work.
+const withPublications = new Set<string>();
+for (const w of loadWorks()) {
+  for (const a of w.authors) {
+    const m = matchMember(a, people);
+    if (m) withPublications.add(m);
+  }
+}
 const years = (p: (typeof people)[number]) =>
   [p.data.start, p.data.end].some(Boolean) ? `${p.data.start?.slice(0, 4) ?? '?'}–${p.data.end?.slice(0, 4) ?? ''}` : '';
 ---
 <Base title="People">
   <h1>People</h1>
   <h2>Current group members</h2>
-  {pis.map((p) => <PersonCard person={p} wide />)}
+  {pis.map((p) => <PersonCard person={p} wide hasPublications={withPublications.has(p.id)} />)}
   <div class="grid grid-people" style="margin-top:1.5rem">
-    {members.map((p) => <PersonCard person={p} />)}
+    {members.map((p) => <PersonCard person={p} hasPublications={withPublications.has(p.id)} />)}
     <article class="card person">
       <div class="avatar" aria-hidden="true">?</div>
       <h3>You?</h3>
@@ -32,8 +41,7 @@ const years = (p: (typeof people)[number]) =>
       {alumni.map((p) => (
         <li>
           <strong>{p.data.website ? <a href={p.data.website}>{p.data.name}</a> : p.data.name}</strong>
-          — {p.data.title ?? ROLE_LABELS[p.data.role]}{years(p) && <span class="muted"> ({years(p)})</span>}
-          {p.data.next && <span>. Next: {p.data.next}</span>}
+          — {p.data.title ?? ROLE_LABELS[p.data.role]}{years(p) && <span class="muted"> ({years(p)})</span>}{p.data.next && <span>. Next: {p.data.next}</span>}
         </li>
       ))}
     </ul>

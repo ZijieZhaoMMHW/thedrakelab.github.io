@@ -17,6 +17,7 @@ const nav = [
   ['Publications', 'publications/'],
   ['Opportunities', 'opportunities/'],
   ['Resources', 'resources/'],
+  ['Contact', 'contact/'],
 ];
 const here = Astro.url.pathname.replace(import.meta.env.BASE_URL.replace(/\/$/, ''), '').replace(/^\//, '');
 const active = (p: string) => (p === '' ? here === '' : here.startsWith(p));
@@ -54,6 +55,7 @@ const active = (p: string) => (p === '' ? here === '' : here.startsWith(p));
     <footer class="site-footer">
       <div class="wrap footer-inner">
         <p>Ocean and Climate Dynamics group · PI: Henri F. Drake · Department of Earth System Science, University of California, Irvine</p>
+        <p>3212 Croul Hall, Irvine, CA 92697-3100 · <a href="mailto:hfdrake@uci.edu">hfdrake@uci.edu</a></p>
         {repo && <p><a href={`https://github.com/${repo}`}>Edit this site on GitHub</a> — see the README for how to contribute.</p>}
       </div>
     </footer>
