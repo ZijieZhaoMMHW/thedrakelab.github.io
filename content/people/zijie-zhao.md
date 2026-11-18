@@ -6,7 +6,7 @@ status: current        # current | alumni
 start: 2025-04         # when you joined: YYYY-MM (or just YYYY)
 end:                   # when you left (alumni only)
 photo: /images/people/zijie-zhao.jpg   # optional; initials are shown if missing
-pronouns: he/heim     # optional
+pronouns: he/him     # optional
 email: zijiz26@uci.edu    # optional (shown as a clickable mailto link)
 github: ZijieZhaoMMHW        # optional (username only)
 orcid: 0000-0003-3403-878X            # optional
