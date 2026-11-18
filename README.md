@@ -11,7 +11,6 @@ This repository is the source for our group website. The site is **fully static*
 | I want to…                              | Edit / add this file                                  |
 |----------------------------------------|-------------------------------------------------------|
 | Add myself or update my bio             | `content/people/<firstname-lastname>.md`              |
-| Post news (paper, award, talk, event)   | `content/news/<YYYY-MM-DD>-<short-title>.md`          |
 | Add or update a research project        | `content/projects/<short-name>.md`                    |
 | Edit the Opportunities or Resources page | `content/pages/opportunities.md`, `content/pages/resources.md` |
 | Edit the lab mission / group photos     | `content/pages/home.md`                               |
@@ -53,6 +52,7 @@ email: jdoe@uci.edu    # optional (displayed as "jdoe at uci.edu")
 website: https://janedoe.github.io   # optional
 github: janedoe        # optional (username only)
 orcid: 0000-0000-0000-0000            # optional
+scholar: AbCdEfGhIjKl # optional: the 12-character ID from the "user=" part of your Google Scholar URL
 projects: [ice-ocean]  # optional: file names (without .md) from content/projects/
 next:                  # alumni only: where you went next, e.g. "Postdoc, MIT"
 ---
@@ -64,6 +64,9 @@ MOM6 simulations. Before joining the group she ... (2–5 sentences, third perso
 **Leaving the group?** Change `status: current` to `status: alumni`, and fill in `end:` and `next:`. Please don't delete your file — it moves you to the Alumni list automatically.
 
 ### News & events — `content/news/YYYY-MM-DD-short-title.md`
+
+> **Note:** the News tab is currently hidden from the site navigation, so these pages are built but not
+> linked from anywhere. To bring it back, add `['News', 'news/']` to the `nav` list in `src/layouts/Base.astro`.
 
 ```markdown
 ---
@@ -80,6 +83,21 @@ Congratulations to Jane on her NSF GRFP award! (One short paragraph is plenty.)
 ```
 
 For **upcoming events** (seminars, workshops), use `type: event` with the event date as `date:`. Future events show under "Upcoming events" on the News page and move into the regular list automatically once the date passes (the next time the site is rebuilt).
+
+### Standalone pages — `content/pages/<name>.md`
+
+These are the Overview (`home.md`), Opportunities, and Resources pages.
+
+```markdown
+---
+title: Opportunities
+description: One sentence used for search engines and link previews.   # optional
+section_nav: true      # optional: show buttons at the top that jump to each "## " section
+---
+```
+
+With `section_nav: true`, every `## ` heading on the page automatically becomes a button at the top — add,
+rename, or reorder a section and the buttons follow. No other setup is needed.
 
 ### Research projects — `content/projects/<short-name>.md`
 

@@ -19,6 +19,7 @@ const people = defineCollection({
     website: z.string().url().nullish(),
     github: z.string().nullish(),
     orcid: z.string().regex(/^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$/, 'ORCID should look like 0000-0000-0000-0000').nullish(),
+    scholar: z.string().regex(/^[\w-]{12}$/, 'Google Scholar should be the 12-character profile ID from the "user=" part of your profile URL').nullish(),
     cv: z.string().nullish(),
     projects: z.array(z.string()).default([]),
     next: z.string().nullish(),
@@ -59,6 +60,8 @@ const pages = defineCollection({
     title: z.string(),
     description: z.string().nullish(),
     photos: z.array(z.object({ src: z.string(), caption: z.string() })).default([]),
+    // Show buttons at the top of the page that jump to each "## " section.
+    section_nav: z.boolean().default(false),
   }),
 });
 

@@ -4,8 +4,11 @@
   --line: #dde3e9;
   --bg: #ffffff;
   --bg-soft: #f4f7f9;
-  --accent: #0b4f6c;
-  --accent-2: #1b8aa6;
+  /* UCI brand colors (https://brand.uci.edu) */
+  --uci-blue: #0064a4;
+  --uci-gold: #ffd200;
+  --accent: var(--uci-blue);
+  --accent-2: #00406e;
   --radius: 10px;
   --wrap: 1080px;
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
@@ -26,7 +29,7 @@ h3 { font-size: 1.2rem; margin: 1.6rem 0 0.5rem; }
 .skip:focus { left: 1rem; top: 1rem; background: #fff; padding: .5rem; z-index: 10; }
 
 /* Header */
-.site-header { background: var(--accent); color: #fff; }
+.site-header { background: var(--uci-blue); color: #fff; border-bottom: 3px solid var(--uci-gold); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: .9rem; padding-bottom: .9rem; }
 .brand { color: #fff; text-decoration: none; display: flex; flex-direction: column; }
 .brand:hover { color: #fff; }
@@ -34,12 +37,12 @@ h3 { font-size: 1.2rem; margin: 1.6rem 0 0.5rem; }
 .brand-sub { font-size: .8rem; opacity: .8; }
 .menu-btn { display: none; background: none; border: 1px solid rgba(255,255,255,.4); color: #fff; font-size: 1.3rem; border-radius: 6px; padding: .2rem .6rem; cursor: pointer; }
 .menu { display: flex; flex-wrap: wrap; gap: .2rem; }
-.menu a { color: #e6f3f7; text-decoration: none; padding: .35rem .6rem; border-radius: 6px; font-size: .95rem; }
+.menu a { color: #dcebf7; text-decoration: none; padding: .35rem .6rem; border-radius: 6px; font-size: .95rem; }
 .menu a:hover, .menu a[aria-current="page"] { background: rgba(255,255,255,.15); color: #fff; }
 .header-inner { position: relative; }
 @media (max-width: 860px) {
   .menu-btn { display: block; }
-  .menu { display: none; position: absolute; right: 1rem; top: 100%; background: var(--accent); flex-direction: column; padding: .5rem; border-radius: var(--radius); z-index: 5; box-shadow: 0 6px 20px rgba(0,0,0,.2); }
+  .menu { display: none; position: absolute; right: 1rem; top: 100%; background: var(--uci-blue); flex-direction: column; padding: .5rem; border-radius: var(--radius); z-index: 5; box-shadow: 0 6px 20px rgba(0,0,0,.2); }
   .menu.open { display: flex; }
 }
 
@@ -55,6 +58,18 @@ figcaption, .caption { color: var(--muted); font-size: .9rem; margin-top: .4rem;
 .lead { font-size: 1.15rem; color: #2c3a47; }
 .muted { color: var(--muted); }
 .eyebrow { text-transform: uppercase; letter-spacing: .06em; font-size: .75rem; color: var(--accent-2); font-weight: 600; }
+
+/* Section jump links (pages with `section_nav: true`) — same pill shape as the publication tabs */
+.section-nav { display: flex; flex-wrap: wrap; align-items: baseline; gap: .4rem .45rem; margin: 1.1rem 0 2rem; }
+.section-nav .label { color: var(--muted); font-size: .9rem; margin-right: .15rem; }
+.section-nav a {
+  background: #fff; border: 1px solid var(--line); border-radius: 999px;
+  padding: .35rem .85rem; font-size: .9rem; color: var(--accent); text-decoration: none;
+  transition: background .15s, border-color .15s, color .15s;
+}
+.section-nav a:hover, .section-nav a:focus-visible { background: var(--uci-blue); border-color: var(--uci-blue); color: #fff; }
+/* keep a jumped-to heading clear of the top of the viewport */
+.prose h2 { scroll-margin-top: 1rem; }
 
 /* Cards & grids */
 .grid { display: grid; gap: 1.25rem; }
@@ -91,7 +106,7 @@ a.card:hover { box-shadow: 0 6px 18px rgba(15,36,51,.1); transform: translateY(-
 .pub-tabs { display: flex; gap: .3rem; flex-wrap: wrap; }
 .pub-tabs button { border: 1px solid var(--line); background: #fff; padding: .45rem .8rem; border-radius: 999px; cursor: pointer; font-size: .9rem; }
 .pub-tabs button[aria-pressed="true"] { background: var(--accent); color: #fff; border-color: var(--accent); }
-.pub-tabs button[aria-pressed="true"] .count { color: #cfe8f0; }
+.pub-tabs button[aria-pressed="true"] .count { color: #cfe2f3; }
 .pub-list { list-style: none; padding: 0; margin: 0; }
 .pub { padding: .85rem 0; border-bottom: 1px solid var(--line); }
 .pub .title { font-weight: 600; }

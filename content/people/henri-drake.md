@@ -8,6 +8,7 @@ photo: /images/people/henri-drake.jpg
 pronouns: he/him
 email: hfdrake@uci.edu
 orcid: 0000-0003-0135-0814
+scholar: PToRK3cAAAAJ
 cv: /files/Drake_CV.pdf
 projects: [ice-ocean, circulation-theory, ocean-turbulence]
 ---

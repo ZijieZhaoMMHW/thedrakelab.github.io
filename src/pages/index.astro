@@ -9,7 +9,6 @@ const home = await getEntry('pages', 'home');
 if (!home) throw new Error('content/pages/home.md is missing');
 const { Content } = await render(home);
 const projects = (await getCollection('projects', (p) => p.data.status === 'active')).sort((a, b) => a.data.order - b.data.order);
-const news = (await getCollection('news')).sort((a, b) => +b.data.date - +a.data.date).slice(0, 3);
 const [latestPhoto, ...pastPhotos] = home.data.photos;
 ---
 <Base>
@@ -29,15 +28,6 @@ const [latestPhoto, ...pastPhotos] = home.data.photos;
       </a>
     ))}
   </div>
-
-  <h2>Recent news</h2>
-  {news.map((n) => (
-    <div class="news-item">
-      <span class="tag">{n.data.type}</span> <span class="muted">{n.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</span>
-      <h3><a href={url(`news/${n.id}/`)}>{n.data.title}</a></h3>
-    </div>
-  ))}
-  <p><a href={url('news/')}>All news →</a></p>
 
   {pastPhotos.length > 0 && <>
     <h2>Previous group pictures</h2>

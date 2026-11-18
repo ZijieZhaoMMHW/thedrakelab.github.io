@@ -21,6 +21,7 @@ const hasBio = (person.body ?? '').trim().length > 0;
       {d.website && <a href={d.website}>Website</a>}
       {d.github && <a href={`https://github.com/${d.github}`}>GitHub</a>}
       {d.orcid && <a href={`https://orcid.org/${d.orcid}`}>ORCID</a>}
+      {d.scholar && <a href={`https://scholar.google.com/citations?user=${d.scholar}`}>Google Scholar</a>}
       {d.cv && <a href={url(d.cv)}>CV</a>}
     </p>
     {hasBio && <div class="bio"><Content /></div>}

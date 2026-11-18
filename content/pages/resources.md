@@ -18,7 +18,6 @@ Successful applications that Henri accepted:
 - [Society for Women in Marine Science (SWMS)](https://swmsmarinescience.com/)
 - [Asian Americans and Pacific Islanders in Geoscience (AAPIiG)](https://www.aapigeosci.org/)
 - [Geolatinas](https://geolatinas.org/)
-- [Black in Geoscience](https://blackingeoscience.org/)
 - [International Association for Geoscience Diversity (IAGD)](https://theiagd.org/)
 
 ![2019 SWMS Symposium Planning Committee](/images/group/2019-swms-planning-committee.png)

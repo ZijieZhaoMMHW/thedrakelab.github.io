@@ -1,6 +1,7 @@
 ---
 title: Opportunities
 description: Open positions for prospective postdocs, PhD students, and undergraduate researchers in the Ocean and Climate Dynamics group.
+section_nav: true
 ---
 
 See employment opportunities for prospective postdocs, PhD students, and undergraduate research assistants below. Prof. Drake's expertise is best suited to mentoring scientists who are interested in careers in oceanographic or climate research.
