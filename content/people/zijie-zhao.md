@@ -13,5 +13,5 @@ orcid: 0000-0003-3403-878X            # optional
 scholar: Cw0DPd0AAAAJ&hl # optional: the 12-character ID from the "user=" part of your Google Scholar URL
 ---
 
-I joined the group in April 2025 as a Postdoctoral Researcher. Before that, I worked as a Research Associate at the Institute for Marine and Antarctic Studies, University of Tasmania. As a methods person and programmer at heart, I enjoy developing tools and methods to make working with large-scale ocean and climate datasets a little easier. My current research focuses on tracking multidimensional ocean extremes. Outside of research, I enjoy playing guitar. I also used to play in a local band in Melbourne covering classic English pop and rock from the last century, including songs by The Beatles, The Beach Boys, and Elvis Presley. 
+I joined the group in April 2025 as a Postdoctoral Researcher. Before that, I worked as a Research Associate at the Institute for Marine and Antarctic Studies, University of Tasmania. As a methods person and programmer at heart, I enjoy developing tools and methods to make working with large-scale ocean and climate datasets a little easier. My current research focuses on tracking multidimensional ocean extremes. Outside of research, I enjoy playing guitar. I used to play in a local band in Melbourne covering classic English pop and rock, focusing on songs by Beatles.
 
