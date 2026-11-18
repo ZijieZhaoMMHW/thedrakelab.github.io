@@ -6,6 +6,10 @@ status: active
 order: 2
 image: /images/projects/abyssal-circulation-schematic.png
 caption: "A schematic of a new paradigm for the circulation of the abyssal ocean (i.e. below a depth of 2000 m). [Source: [Drake et al. (2020), *Journal of Physical Oceanography*](https://doi.org/10.1175/JPO-D-19-0313.1)]"
+funding:
+  - "NSF CAREER (Office of Polar Programs), 2026-2031. PI: Drake. Feedbacks and Tipping Dynamics in Earth System Models with Interactive Ice Sheets."
+  - "Packard Fellowship for Science and Engineering, 2026-2031. PI: Drake. Nonlinear amplification of coastal city flooding by global climate feedbacks."
+  - "Hellman Fellows Fund, 2025. PI: Drake. Ocean currents and melting ice: Earth's climate tipping points."
 ---
 
 State-of-the-art general circulation models provide remarkably precise representations of large-scale ocean currents, but their complexity also obscures the fundamental physical mechanisms responsible for the circulation patterns that emerge. We use hierarchies of increasingly complex ocean models to ground our understanding of the general ocean circulation in fundamental geophysical fluid dynamics and to pinpoint key dynamical mechanisms.

@@ -17,7 +17,7 @@ const [latestPhoto, ...pastPhotos] = home.data.photos;
   {latestPhoto && <Media image={latestPhoto.src} caption={latestPhoto.caption} alt="Group photo" />}
 
   <h2>Current research areas</h2>
-  <div class="grid grid-3">
+  <div class="grid grid-3 home-research">
     {projects.map((p) => <ProjectCard project={p} />)}
   </div>
 

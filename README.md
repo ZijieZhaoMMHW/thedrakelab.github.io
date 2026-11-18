@@ -48,7 +48,7 @@ start: 2025-09         # when you joined: YYYY-MM (or just YYYY)
 end:                   # when you left (alumni only)
 photo: /images/people/jane-doe.jpg   # optional; initials are shown if missing
 pronouns: she/her      # optional
-email: jdoe@uci.edu    # optional (displayed as "jdoe at uci.edu")
+email: jdoe@uci.edu    # optional (shown as a clickable mailto link)
 website: https://janedoe.github.io   # optional
 github: janedoe        # optional (username only)
 orcid: 0000-0000-0000-0000            # optional

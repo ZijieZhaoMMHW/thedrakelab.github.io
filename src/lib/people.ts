@@ -25,10 +25,6 @@ export function photoExists(p?: string | null) {
   return !!p && (/^https?:/.test(p) || fs.existsSync('public' + (p.startsWith('/') ? p : '/' + p)));
 }
 
-export function obfuscateEmail(e: string) {
-  return e.replace('@', ' at ');
-}
-
 export function initials(name: string) {
   const w = name.split(/\s+/).filter(Boolean);
   return ((w[0]?.[0] ?? '') + (w.length > 1 ? w[w.length - 1][0] : '')).toUpperCase();

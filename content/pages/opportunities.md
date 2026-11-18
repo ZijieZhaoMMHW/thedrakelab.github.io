@@ -22,7 +22,7 @@ Minimum requirements for joining our group are:
 
 The following additional qualifications are not necessary but will strengthen an application: experience analyzing ocean simulation data, running computational ocean or climate models, developing theoretical models, or analytically solving problems in geophysical fluid dynamics.
 
-**How to apply:** Applications go through the [UCI Earth System Science PhD program](https://www.ess.uci.edu/phd-program), which lists the deadline, the required materials, and how admissions works. Name Henri in your statement of purpose if you would like to work with him — you can name other ESS faculty too, and doing so will not count against you.
+**How to apply:** **Applications are due 1 December 2026** for a Fall 2027 start, through the [UCI Earth System Science PhD program](https://www.ess.uci.edu/phd-program), which lists the required materials and how admissions works. Name Henri in your statement of purpose if you would like to work with him — you can name other ESS faculty too, and doing so will not count against you.
 
 **Email before you apply.** You are welcome — encouraged — to write to Henri at [hfdrake@uci.edu](mailto:hfdrake@uci.edu) before submitting an application. A short email is plenty: a paragraph on what you have worked on, a paragraph on which of the projects above interests you and why, and your CV attached. You do not need to have read his papers, propose a thesis, or arrive with a polished pitch.
 

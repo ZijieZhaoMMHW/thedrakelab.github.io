@@ -9,4 +9,3 @@ We study the fluid dynamics of the ocean and how they shape the evolution of the
 
 Our work is supported by the National Science Foundation (CAREER award, Office of Polar Programs), the
 David and Lucile Packard Foundation, NASA, NOAA, the Department of Energy, and the Hellman Fellows Fund.
-Henri is a 2026 Packard Fellow and a former NOAA Climate and Global Change Postdoctoral Fellow.
