@@ -21,9 +21,6 @@ and your time zone in the subject line.
 He can speak to deep ocean circulation and mixing, Antarctic and Greenland ice melt, sea level rise,
 marine heatwaves, climate tipping points, and how climate models work.
 
-He is **not** the right person for hurricanes and day-to-day weather, ocean ecology or fisheries, ocean
-acidification chemistry, or climate policy and economics — but he is happy to point you to colleagues who are.
-
 ## Images and video
 
 Photographs, figures, and animations on this site may be reproduced with credit to "Henri F. Drake / UC
