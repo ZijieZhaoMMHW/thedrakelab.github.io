@@ -4,9 +4,11 @@ description: How to reach the Ocean and Climate Dynamics group at UC Irvine, inc
 section_nav: true
 ---
 
-Henri F. Drake — <hfdrake@uci.edu>
-3212 Croul Hall, University of California, Irvine, Irvine, CA 92697-3100
-[Department of Earth System Science](https://www.ess.uci.edu/)
+**Henri F. Drake**\
+[hfdrake@uci.edu](mailto:hfdrake@uci.edu)\
+[Department of Earth System Science](https://www.ess.uci.edu/)\
+3212 Croul Hall, University of California, Irvine\
+Irvine, CA 92697-3100
 
 ## Prospective students and postdocs
 
