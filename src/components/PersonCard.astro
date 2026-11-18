@@ -1,0 +1,28 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { render } from 'astro:content';
+import { url } from '../lib/url';
+import { ROLE_LABELS, photoExists, obfuscateEmail, initials } from '../lib/people';
+interface Props { person: CollectionEntry<'people'>; wide?: boolean; }
+const { person, wide = false } = Astro.props;
+const d = person.data;
+const { Content } = await render(person);
+const hasBio = (person.body ?? '').trim().length > 0;
+---
+<article class:list={['person', wide ? 'pi-card' : 'card']} id={person.id}>
+  {photoExists(d.photo)
+    ? <img class="avatar" src={url(d.photo!)} alt={`Photo of ${d.name}`} loading="lazy" />
+    : <div class="avatar" aria-hidden="true">{initials(d.name)}</div>}
+  <div>
+    <h3>{d.name}{d.pronouns && <span class="muted" style="font-size:.85rem;font-weight:400"> ({d.pronouns})</span>}</h3>
+    <p class="role">{d.title ?? ROLE_LABELS[d.role]}</p>
+    <p class="links">
+      {d.email && <span>{obfuscateEmail(d.email)}</span>}
+      {d.website && <a href={d.website}>Website</a>}
+      {d.github && <a href={`https://github.com/${d.github}`}>GitHub</a>}
+      {d.orcid && <a href={`https://orcid.org/${d.orcid}`}>ORCID</a>}
+      {d.cv && <a href={url(d.cv)}>CV</a>}
+    </p>
+    {hasBio && <div class="bio"><Content /></div>}
+  </div>
+</article>

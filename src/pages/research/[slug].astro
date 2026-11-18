@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import Media from '../../components/Media.astro';
+import { getCollection, render } from 'astro:content';
+import { url } from '../../lib/url';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((p) => ({ params: { slug: p.id }, props: { project: p } }));
+}
+const { project } = Astro.props;
+const { Content } = await render(project);
+const everyone = await getCollection('people');
+const members = everyone.filter((p) => project.data.people.includes(p.id) || p.data.projects.includes(project.id));
+const current = members.filter((p) => p.data.status === 'current');
+const former = members.filter((p) => p.data.status === 'alumni');
+---
+<Base title={project.data.short_title ?? project.data.title} description={project.data.summary}>
+  <p class="eyebrow"><a href={url('research/')}>Research</a></p>
+  <h1>{project.data.title}</h1>
+  <Media image={project.data.image} video={project.data.video} caption={project.data.caption} />
+  <div class="prose"><Content /></div>
+  {members.length > 0 && <>
+    <h2>People</h2>
+    <p>
+      {current.map((p, i) => <>{i > 0 && ', '}<a href={url(`people/#${p.id}`)}>{p.data.name}</a></>)}
+      {former.length > 0 && <span class="muted"> · Former: {former.map((p) => p.data.name).join(', ')}</span>}
+    </p>
+  </>}
+  {project.data.funding.length > 0 && <><h2>Funding</h2><ul>{project.data.funding.map((f) => <li>{f}</li>)}</ul></>}
+</Base>

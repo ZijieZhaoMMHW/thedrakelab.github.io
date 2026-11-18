@@ -1,0 +1,1755 @@
+{
+  "generated_from": [
+    "0000-0003-0135-0814"
+  ],
+  "works": [
+    {
+      "id": "10.22541/essoar.15007697/v1",
+      "kind": "preprint",
+      "doi": "10.22541/essoar.15007697/v1",
+      "title": "High frequency water mass transformation budgets for individually tracked four-dimensional marine heatwaves",
+      "authors": [
+        {
+          "given": "Mariana I",
+          "family": "Torres",
+          "orcid": "0009-0005-6242-5746"
+        },
+        {
+          "given": "Gaël",
+          "family": "Forget",
+          "orcid": "0000-0002-4234-056X"
+        },
+        {
+          "given": "Shanice",
+          "family": "Bailey",
+          "orcid": "0000-0002-8176-9465"
+        },
+        {
+          "given": "Xinru",
+          "family": "Li",
+          "orcid": "0000-0001-5567-510X"
+        },
+        {
+          "given": "Katherine Elise",
+          "family": "Turner",
+          "orcid": "0000-0003-1666-1690"
+        },
+        {
+          "given": "Henri Francois",
+          "family": "Drake",
+          "orcid": "0000-0003-0135-0814"
+        }
+      ],
+      "venue": "ESS Open Archive",
+      "year": 2026,
+      "month": 8,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.22541/essoar.15007697/v1",
+      "related_dois": []
+    },
+    {
+      "id": "10.31223/x5wn35",
+      "kind": "preprint",
+      "doi": "10.31223/x5wn35",
+      "title": "Transformation of climatologically anomalous water masses",
+      "authors": [
+        {
+          "given": "Ran",
+          "family": "Liu",
+          "orcid": "0000-0002-4210-4268"
+        },
+        {
+          "given": "Gaël",
+          "family": "Forget"
+        },
+        {
+          "given": "Zijie",
+          "family": "Zhao",
+          "orcid": "0000-0003-3403-878X"
+        },
+        {
+          "given": "Henri",
+          "family": "Drake"
+        }
+      ],
+      "venue": "EarthArXiv",
+      "year": 2026,
+      "month": 5,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "publisher": "California Digital Library (CDL)",
+      "url": "https://doi.org/10.31223/x5wn35",
+      "related_dois": []
+    },
+    {
+      "id": "10.31223/x5mj28",
+      "kind": "preprint",
+      "doi": "10.31223/x5mj28",
+      "title": "Tidally-Driven Diapycnal Upwelling in a Rough Sloping Canyon",
+      "authors": [
+        {
+          "given": "Chih-Lun",
+          "family": "Liu"
+        },
+        {
+          "given": "Henri",
+          "family": "Drake"
+        }
+      ],
+      "venue": "EarthArXiv",
+      "year": 2025,
+      "month": 12,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "publisher": "California Digital Library (CDL)",
+      "url": "https://doi.org/10.31223/x5mj28",
+      "related_dois": []
+    },
+    {
+      "id": "10.1029/2025gl119186",
+      "kind": "article",
+      "doi": "10.1029/2025gl119186",
+      "title": "Connecting Mixing to Upwelling Along the Ocean's Sloping Boundary",
+      "authors": [
+        {
+          "given": "Alberto C.",
+          "family": "Naveira Garabato",
+          "orcid": "0000-0001-6071-605X"
+        },
+        {
+          "given": "Carl P.",
+          "family": "Spingys",
+          "orcid": "0000-0001-6220-3047"
+        },
+        {
+          "given": "Bieito Fernández",
+          "family": "Castro",
+          "orcid": "0000-0001-7797-854X"
+        },
+        {
+          "given": "Nicole",
+          "family": "Couto",
+          "orcid": "0000-0002-5330-9592"
+        },
+        {
+          "given": "Henri F.",
+          "family": "Drake"
+        },
+        {
+          "given": "Alexander",
+          "family": "Forryan"
+        },
+        {
+          "given": "Zhiyuan",
+          "family": "Gao",
+          "orcid": "0000-0003-2726-7664"
+        },
+        {
+          "given": "Yuchen",
+          "family": "Ma"
+        },
+        {
+          "given": "Herlé",
+          "family": "Mercier",
+          "orcid": "0000-0002-1940-617X"
+        },
+        {
+          "given": "Marie‐José",
+          "family": "Messias"
+        },
+        {
+          "given": "Xiaozhou",
+          "family": "Ruan",
+          "orcid": "0000-0003-1240-1584"
+        },
+        {
+          "given": "Gunnar",
+          "family": "Voet",
+          "orcid": "0000-0003-1975-186X"
+        },
+        {
+          "given": "Bethan L.",
+          "family": "Wynne‐Cattanach",
+          "orcid": "0000-0003-4960-2419"
+        },
+        {
+          "given": "Raffaele",
+          "family": "Ferrari",
+          "orcid": "0000-0003-1895-4294"
+        },
+        {
+          "given": "Matthew H.",
+          "family": "Alford",
+          "orcid": "0000-0002-6318-0737"
+        }
+      ],
+      "venue": "Geophysical Research Letters",
+      "year": 2025,
+      "month": 11,
+      "volume": "52",
+      "issue": "22",
+      "pages": "e2025GL119186",
+      "publisher": "American Geophysical Union (AGU)",
+      "url": "https://doi.org/10.1029/2025gl119186",
+      "related_dois": [
+        "10.21203/rs.3.rs-4287202/v1",
+        "10.22541/essoar.175767179.90159335/v1"
+      ]
+    },
+    {
+      "id": "10.1029/2024ms004861",
+      "kind": "article",
+      "doi": "10.1029/2024ms004861",
+      "title": "The GFDL‐CM4X Climate Model Hierarchy, Part I: Model Description and Thermal Properties",
+      "authors": [
+        {
+          "given": "Stephen M.",
+          "family": "Griffies",
+          "orcid": "0000-0002-3711-236X"
+        },
+        {
+          "given": "Alistair",
+          "family": "Adcroft",
+          "orcid": "0000-0001-9413-1017"
+        },
+        {
+          "given": "Rebecca L.",
+          "family": "Beadling",
+          "orcid": "0000-0001-9491-8776"
+        },
+        {
+          "given": "Mitchell",
+          "family": "Bushuk",
+          "orcid": "0000-0002-0063-1465"
+        },
+        {
+          "given": "Chiung‐Yin",
+          "family": "Chang",
+          "orcid": "0009-0009-8815-893X"
+        },
+        {
+          "given": "Henri F.",
+          "family": "Drake",
+          "orcid": "0000-0003-0135-0814"
+        },
+        {
+          "given": "Raphael",
+          "family": "Dussin",
+          "orcid": "0000-0003-4004-4553"
+        },
+        {
+          "given": "Robert W.",
+          "family": "Hallberg"
+        },
+        {
+          "given": "William J.",
+          "family": "Hurlin",
+          "orcid": "0000-0002-7390-6669"
+        },
+        {
+          "given": "Hemant",
+          "family": "Khatri",
+          "orcid": "0000-0001-6559-9059"
+        },
+        {
+          "given": "John P.",
+          "family": "Krasting",
+          "orcid": "0000-0002-4650-9844"
+        },
+        {
+          "given": "Matthew",
+          "family": "Lobo",
+          "orcid": "0009-0003-4737-5862"
+        },
+        {
+          "given": "Graeme A.",
+          "family": "MacGilchrist",
+          "orcid": "0000-0003-1409-8937"
+        },
+        {
+          "given": "Brandon G.",
+          "family": "Reichl",
+          "orcid": "0000-0001-9047-0767"
+        },
+        {
+          "given": "Aakash",
+          "family": "Sane",
+          "orcid": "0000-0002-9642-008X"
+        },
+        {
+          "given": "Olga",
+          "family": "Sergienko",
+          "orcid": "0000-0002-5764-8815"
+        },
+        {
+          "given": "Maike",
+          "family": "Sonnewald",
+          "orcid": "0000-0002-5136-9604"
+        },
+        {
+          "given": "Jacob M.",
+          "family": "Steinberg",
+          "orcid": "0000-0002-2609-6405"
+        },
+        {
+          "given": "Jan‐Erik",
+          "family": "Tesdal",
+          "orcid": "0000-0002-1702-0097"
+        },
+        {
+          "given": "Matthew",
+          "family": "Thomas",
+          "orcid": "0000-0002-4383-7893"
+        },
+        {
+          "given": "Katherine E.",
+          "family": "Turner",
+          "orcid": "0000-0003-1666-1690"
+        },
+        {
+          "given": "Marshall L.",
+          "family": "Ward"
+        },
+        {
+          "given": "Michael",
+          "family": "Winton",
+          "orcid": "0000-0001-7982-0260"
+        },
+        {
+          "given": "Niki",
+          "family": "Zadeh",
+          "orcid": "0000-0002-0025-0769"
+        },
+        {
+          "given": "Laure",
+          "family": "Zanna",
+          "orcid": "0000-0002-8472-4828"
+        },
+        {
+          "given": "Rong",
+          "family": "Zhang",
+          "orcid": "0000-0002-8493-6556"
+        },
+        {
+          "given": "Wenda",
+          "family": "Zhang",
+          "orcid": "0000-0002-8025-2819"
+        },
+        {
+          "given": "Ming",
+          "family": "Zhao",
+          "orcid": "0000-0003-4996-7821"
+        }
+      ],
+      "venue": "Journal of Advances in Modeling Earth Systems",
+      "year": 2025,
+      "month": 10,
+      "volume": "17",
+      "issue": "10",
+      "pages": "e2024MS004861",
+      "publisher": "American Geophysical Union (AGU)",
+      "url": "https://doi.org/10.1029/2024ms004861",
+      "related_dois": [
+        "10.22541/essoar.173282145.53065190/v1"
+      ]
+    },
+    {
+      "id": "10.1029/2024ms004862",
+      "kind": "article",
+      "doi": "10.1029/2024ms004862",
+      "title": "The GFDL‐CM4X Climate Model Hierarchy, Part II: Case Studies",
+      "authors": [
+        {
+          "given": "Stephen M.",
+          "family": "Griffies",
+          "orcid": "0000-0002-3711-236X"
+        },
+        {
+          "given": "Alistair",
+          "family": "Adcroft",
+          "orcid": "0000-0001-9413-1017"
+        },
+        {
+          "given": "Rebecca L.",
+          "family": "Beadling",
+          "orcid": "0000-0001-9491-8776"
+        },
+        {
+          "given": "Mitchell",
+          "family": "Bushuk",
+          "orcid": "0000-0002-0063-1465"
+        },
+        {
+          "given": "Chiung‐Yin",
+          "family": "Chang",
+          "orcid": "0009-0009-8815-893X"
+        },
+        {
+          "given": "Henri F.",
+          "family": "Drake",
+          "orcid": "0000-0003-0135-0814"
+        },
+        {
+          "given": "Raphael",
+          "family": "Dussin",
+          "orcid": "0000-0003-4004-4553"
+        },
+        {
+          "given": "Robert W.",
+          "family": "Hallberg"
+        },
+        {
+          "given": "William J.",
+          "family": "Hurlin",
+          "orcid": "0000-0002-7390-6669"
+        },
+        {
+          "given": "Hemant",
+          "family": "Khatri",
+          "orcid": "0000-0001-6559-9059"
+        },
+        {
+          "given": "John P.",
+          "family": "Krasting",
+          "orcid": "0000-0002-4650-9844"
+        },
+        {
+          "given": "Matthew",
+          "family": "Lobo",
+          "orcid": "0009-0003-4737-5862"
+        },
+        {
+          "given": "Graeme A.",
+          "family": "MacGilchrist",
+          "orcid": "0000-0003-1409-8937"
+        },
+        {
+          "given": "Brandon G.",
+          "family": "Reichl",
+          "orcid": "0000-0001-9047-0767"
+        },
+        {
+          "given": "Aakash",
+          "family": "Sane",
+          "orcid": "0000-0002-9642-008X"
+        },
+        {
+          "given": "Olga",
+          "family": "Sergienko",
+          "orcid": "0000-0002-5764-8815"
+        },
+        {
+          "given": "Maike",
+          "family": "Sonnewald",
+          "orcid": "0000-0002-5136-9604"
+        },
+        {
+          "given": "Jacob M.",
+          "family": "Steinberg",
+          "orcid": "0000-0002-2609-6405"
+        },
+        {
+          "given": "Jan‐Erik",
+          "family": "Tesdal",
+          "orcid": "0000-0002-1702-0097"
+        },
+        {
+          "given": "Matthew",
+          "family": "Thomas",
+          "orcid": "0000-0002-4383-7893"
+        },
+        {
+          "given": "Katherine E.",
+          "family": "Turner",
+          "orcid": "0000-0003-1666-1690"
+        },
+        {
+          "given": "Marshall L.",
+          "family": "Ward"
+        },
+        {
+          "given": "Michael",
+          "family": "Winton",
+          "orcid": "0000-0001-7982-0260"
+        },
+        {
+          "given": "Niki",
+          "family": "Zadeh",
+          "orcid": "0000-0002-0025-0769"
+        },
+        {
+          "given": "Laure",
+          "family": "Zanna",
+          "orcid": "0000-0002-8472-4828"
+        },
+        {
+          "given": "Rong",
+          "family": "Zhang",
+          "orcid": "0000-0002-8493-6556"
+        },
+        {
+          "given": "Wenda",
+          "family": "Zhang",
+          "orcid": "0000-0002-8025-2819"
+        },
+        {
+          "given": "Ming",
+          "family": "Zhao",
+          "orcid": "0000-0003-4996-7821"
+        }
+      ],
+      "venue": "Journal of Advances in Modeling Earth Systems",
+      "year": 2025,
+      "month": 10,
+      "volume": "17",
+      "issue": "10",
+      "pages": "e2024MS004862",
+      "publisher": "American Geophysical Union (AGU)",
+      "url": "https://doi.org/10.1029/2024ms004862",
+      "related_dois": [
+        "10.22541/essoar.173282138.89550323/v1"
+      ]
+    },
+    {
+      "id": "10.5281/zenodo.15085088",
+      "kind": "data",
+      "doi": "10.5281/zenodo.15085088",
+      "title": "Example outputs from a realistic global ocean configuration of MOM6, used to demonstrate calculations like Water Mass Transformation Budgets.",
+      "authors": [
+        {
+          "given": "Henri",
+          "family": "Drake"
+        }
+      ],
+      "venue": "Zenodo",
+      "year": 2025,
+      "month": 5,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "publisher": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.15085088",
+      "related_dois": [
+        "10.5281/zenodo.15117174",
+        "10.5281/zenodo.15384717",
+        "10.5281/zenodo.15384838",
+        "10.5281/zenodo.15384910",
+        "10.5281/zenodo.15420739"
+      ]
+    },
+    {
+      "id": "10.5281/zenodo.15383536",
+      "kind": "data",
+      "doi": "10.5281/zenodo.15383536",
+      "title": "Supporting model data and software code for: The GFDL-CM4X climate model hierarchy, Part I and Part II",
+      "authors": [
+        {
+          "given": "Stephen",
+          "family": "Griffies"
+        },
+        {
+          "given": "Alistair",
+          "family": "Adcroft"
+        },
+        {
+          "given": "Rebecca",
+          "family": "Beadling"
+        },
+        {
+          "given": "Mitchell",
+          "family": "Bushuk"
+        },
+        {
+          "given": "Chiung-Yin",
+          "family": "Chang"
+        },
+        {
+          "given": "Henri",
+          "family": "Drake"
+        },
+        {
+          "given": "Raphael",
+          "family": "Dussin"
+        },
+        {
+          "given": "Robert",
+          "family": "Hallberg"
+        },
+        {
+          "given": "William",
+          "family": "Hurlin"
+        },
+        {
+          "given": "Hemant",
+          "family": "Khatri"
+        },
+        {
+          "given": "John",
+          "family": "Krasting"
+        },
+        {
+          "given": "",
+          "family": "Matthew Lobo"
+        },
+        {
+          "given": "Graeme",
+          "family": "MacGilchrist"
+        },
+        {
+          "given": "Brandon",
+          "family": "Reichl"
+        },
+        {
+          "given": "Aakash",
+          "family": "Sane"
+        },
+        {
+          "given": "Olga",
+          "family": "Sergienko"
+        },
+        {
+          "given": "Maike",
+          "family": "Sonnewald"
+        },
+        {
+          "given": "Jacob",
+          "family": "Steinberg"
+        },
+        {
+          "given": "Jan-Erik",
+          "family": "Tesdal"
+        },
+        {
+          "given": "Matthew",
+          "family": "Thomas"
+        },
+        {
+          "given": "Katherine",
+          "family": "Turner"
+        },
+        {
+          "given": "Marshall",
+          "family": "Ward"
+        },
+        {
+          "given": "Michael",
+          "family": "Winton"
+        },
+        {
+          "given": "Niki",
+          "family": "Zadeh"
+        },
+        {
+          "given": "Laure",
+          "family": "Zanna"
+        },
+        {
+          "given": "Rong",
+          "family": "Zhang"
+        },
+        {
+          "given": "Wenda",
+          "family": "Zhang"
+        },
+        {
+          "given": "Ming",
+          "family": "Zhao"
+        }
+      ],
+      "venue": "Zenodo",
+      "year": 2025,
+      "month": 5,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "publisher": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.15383536",
+      "related_dois": [
+        "10.5281/zenodo.15383537"
+      ]
+    },
+    {
+      "id": "10.5281/zenodo.15085089",
+      "kind": "data",
+      "doi": "10.5281/zenodo.15085089",
+      "title": "Example ocean mass, heat, and budget diagnostics, as required for Water Mass Transformation budget calculations",
+      "authors": [
+        {
+          "given": "Henri",
+          "family": "Drake"
+        }
+      ],
+      "venue": "Zenodo",
+      "year": 2025,
+      "month": 3,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "publisher": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.15085089",
+      "related_dois": []
+    },
+    {
+      "id": "10.5281/zenodo.15086631",
+      "kind": "data",
+      "doi": "10.5281/zenodo.15086631",
+      "title": "Example ocean mass, heat, and budget diagnostics, for example as required for Water Mass Transformation budget calculations",
+      "authors": [
+        {
+          "given": "Henri",
+          "family": "Drake"
+        }
+      ],
+      "venue": "Zenodo",
+      "year": 2025,
+      "month": 3,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "publisher": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.15086631",
+      "related_dois": []
+    },
+    {
+      "id": "10.1029/2024ms004383",
+      "kind": "article",
+      "doi": "10.1029/2024ms004383",
+      "title": "Water Mass Transformation Budgets in Finite‐Volume Generalized Vertical Coordinate Ocean Models",
+      "authors": [
+        {
+          "given": "Henri F.",
+          "family": "Drake",
+          "orcid": "0000-0003-0135-0814"
+        },
+        {
+          "given": "Shanice",
+          "family": "Bailey",
+          "orcid": "0000-0002-8176-9465"
+        },
+        {
+          "given": "Raphael",
+          "family": "Dussin"
+        },
+        {
+          "given": "Stephen M.",
+          "family": "Griffies",
+          "orcid": "0000-0002-3711-236X"
+        },
+        {
+          "given": "John",
+          "family": "Krasting",
+          "orcid": "0000-0002-4650-9844"
+        },
+        {
+          "given": "Graeme",
+          "family": "MacGilchrist",
+          "orcid": "0000-0003-1409-8937"
+        },
+        {
+          "given": "Geoffrey",
+          "family": "Stanley",
+          "orcid": "0000-0003-4536-8602"
+        },
+        {
+          "given": "Jan‐Erik",
+          "family": "Tesdal",
+          "orcid": "0000-0002-1702-0097"
+        },
+        {
+          "given": "Jan D.",
+          "family": "Zika",
+          "orcid": "0000-0003-3462-3559"
+        }
+      ],
+      "venue": "Journal of Advances in Modeling Earth Systems",
+      "year": 2025,
+      "month": 3,
+      "volume": "17",
+      "issue": "3",
+      "pages": "e2024MS004383",
+      "publisher": "American Geophysical Union (AGU)",
+      "url": "https://doi.org/10.1029/2024ms004383",
+      "related_dois": [
+        "10.22541/essoar.171284935.57181910/v1",
+        "10.22541/essoar.174139301.14404675/v1",
+        "10.31219/osf.io/rntyp"
+      ]
+    },
+    {
+      "id": "10.1029/2024gl111768",
+      "kind": "article",
+      "doi": "10.1029/2024gl111768",
+      "title": "The Thermodynamics of the 2023 Gulf of Mexico Marine Heatwave",
+      "authors": [
+        {
+          "given": "Shanice T.",
+          "family": "Bailey",
+          "orcid": "0000-0002-8176-9465"
+        },
+        {
+          "given": "Henri F.",
+          "family": "Drake"
+        },
+        {
+          "given": "Laura K.",
+          "family": "Gruenburg"
+        },
+        {
+          "given": "Ryan P.",
+          "family": "Abernathey"
+        },
+        {
+          "given": "Mariana I.",
+          "family": "Torres",
+          "orcid": "0009-0005-6242-5746"
+        }
+      ],
+      "venue": "Geophysical Research Letters",
+      "year": 2025,
+      "month": 2,
+      "volume": "52",
+      "issue": "4",
+      "pages": "e2024GL111768",
+      "publisher": "American Geophysical Union (AGU)",
+      "url": "https://doi.org/10.1029/2024gl111768",
+      "related_dois": [
+        "10.22541/essoar.172313003.36837683/v1"
+      ]
+    },
+    {
+      "id": "10.5281/zenodo.14618638",
+      "kind": "software",
+      "doi": "10.5281/zenodo.14618638",
+      "title": "MOM6 model source code/run-time parameters and analysis notebooks used in the Drake et al. (JAMES) water mass transformation budget paper",
+      "authors": [
+        {
+          "given": "Henri",
+          "family": "Drake"
+        }
+      ],
+      "venue": "Zenodo",
+      "year": 2025,
+      "month": 1,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "publisher": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.14618638",
+      "related_dois": [
+        "10.5281/zenodo.14618639"
+      ]
+    },
+    {
+      "id": "10.5281/zenodo.14736769",
+      "kind": "software",
+      "doi": "10.5281/zenodo.14736769",
+      "title": "Ocetrac",
+      "authors": [
+        {
+          "given": "",
+          "family": "Hillary Scannell"
+        },
+        {
+          "given": "Cassia",
+          "family": "Cai"
+        },
+        {
+          "given": "Jacob",
+          "family": "Cohen"
+        },
+        {
+          "given": "Valentina",
+          "family": "Staneva"
+        },
+        {
+          "given": "",
+          "family": "Julius Busecke"
+        },
+        {
+          "given": "",
+          "family": "Ryan Abernathey"
+        },
+        {
+          "given": "",
+          "family": "David John Gagne"
+        },
+        {
+          "given": "",
+          "family": "LuAnne Thompson"
+        },
+        {
+          "given": "",
+          "family": "Daniel Whitt"
+        },
+        {
+          "given": "Henri",
+          "family": "Drake"
+        }
+      ],
+      "venue": "Zenodo",
+      "year": 2025,
+      "month": 1,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "publisher": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.14736769",
+      "related_dois": [
+        "10.5281/zenodo.5102927"
+      ]
+    },
+    {
+      "id": "10.3389/fclim.2024.1445694",
+      "kind": "article",
+      "doi": "10.3389/fclim.2024.1445694",
+      "title": "Future directions for deep ocean climate science and evidence-based decision making",
+      "authors": [
+        {
+          "given": "Helen R.",
+          "family": "Pillar"
+        },
+        {
+          "given": "Elizabeth",
+          "family": "Hetherington"
+        },
+        {
+          "given": "Lisa A.",
+          "family": "Levin"
+        },
+        {
+          "given": "Laura",
+          "family": "Cimoli"
+        },
+        {
+          "given": "Jonathan M.",
+          "family": "Lauderdale"
+        },
+        {
+          "given": "Jesse M. A.",
+          "family": "van der Grient"
+        },
+        {
+          "given": "Kristen",
+          "family": "Johannes"
+        },
+        {
+          "given": "Patrick",
+          "family": "Heimbach"
+        },
+        {
+          "given": "Leslie",
+          "family": "Smith"
+        },
+        {
+          "given": "Charles I.",
+          "family": "Addey"
+        },
+        {
+          "given": "Pavanee",
+          "family": "Annasawmy"
+        },
+        {
+          "given": "Sandra",
+          "family": "Antonio"
+        },
+        {
+          "given": "Narissa",
+          "family": "Bax"
+        },
+        {
+          "given": "Henri F.",
+          "family": "Drake"
+        },
+        {
+          "given": "Elva",
+          "family": "Escobar"
+        },
+        {
+          "given": "Laura G.",
+          "family": "Elsler"
+        },
+        {
+          "given": "Mara A.",
+          "family": "Freilich"
+        },
+        {
+          "given": "Natalya D.",
+          "family": "Gallo"
+        },
+        {
+          "given": "Fanny",
+          "family": "Girard"
+        },
+        {
+          "given": "Matthew J.",
+          "family": "Harke"
+        },
+        {
+          "given": "Daniel O. B.",
+          "family": "Jones"
+        },
+        {
+          "given": "Siddhi",
+          "family": "Joshi"
+        },
+        {
+          "given": "Xinfeng",
+          "family": "Liang"
+        },
+        {
+          "given": "Paige J.",
+          "family": "Maroni"
+        },
+        {
+          "given": "Otmane",
+          "family": "Sarti"
+        },
+        {
+          "given": "Paris V.",
+          "family": "Stefanoudis"
+        },
+        {
+          "given": "Olivier",
+          "family": "Sulpis"
+        },
+        {
+          "given": "David",
+          "family": "Trossman"
+        }
+      ],
+      "venue": "Frontiers in Climate",
+      "year": 2024,
+      "month": 10,
+      "volume": "6",
+      "issue": null,
+      "pages": "1445694",
+      "publisher": "Frontiers Media SA",
+      "url": "https://doi.org/10.3389/fclim.2024.1445694",
+      "related_dois": []
+    },
+    {
+      "id": "10.1038/s41586-024-07411-2",
+      "kind": "article",
+      "doi": "10.1038/s41586-024-07411-2",
+      "title": "Observations of diapycnal upwelling within a sloping submarine canyon",
+      "authors": [
+        {
+          "given": "Bethan L.",
+          "family": "Wynne-Cattanach",
+          "orcid": "0000-0003-4960-2419"
+        },
+        {
+          "given": "Nicole",
+          "family": "Couto",
+          "orcid": "0000-0002-5330-9592"
+        },
+        {
+          "given": "Henri F.",
+          "family": "Drake",
+          "orcid": "0000-0003-0135-0814"
+        },
+        {
+          "given": "Raffaele",
+          "family": "Ferrari",
+          "orcid": "0000-0003-1895-4294"
+        },
+        {
+          "given": "Arnaud",
+          "family": "Le Boyer",
+          "orcid": "0000-0002-1904-1895"
+        },
+        {
+          "given": "Herlé",
+          "family": "Mercier",
+          "orcid": "0000-0002-1940-617X"
+        },
+        {
+          "given": "Marie-José",
+          "family": "Messias",
+          "orcid": "0000-0002-3852-2854"
+        },
+        {
+          "given": "Xiaozhou",
+          "family": "Ruan",
+          "orcid": "0000-0003-1240-1584"
+        },
+        {
+          "given": "Carl P.",
+          "family": "Spingys"
+        },
+        {
+          "given": "Hans",
+          "family": "van Haren",
+          "orcid": "0000-0001-8041-8121"
+        },
+        {
+          "given": "Gunnar",
+          "family": "Voet",
+          "orcid": "0000-0003-1975-186X"
+        },
+        {
+          "given": "Kurt",
+          "family": "Polzin"
+        },
+        {
+          "given": "Alberto C.",
+          "family": "Naveira Garabato"
+        },
+        {
+          "given": "Matthew H.",
+          "family": "Alford"
+        }
+      ],
+      "venue": "Nature",
+      "year": 2024,
+      "month": 6,
+      "volume": "630",
+      "issue": "8018",
+      "pages": "884-890",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1038/s41586-024-07411-2",
+      "related_dois": [
+        "10.21203/rs.3.rs-3459062/v1"
+      ]
+    },
+    {
+      "id": "10.3389/fmars.2023.1241023",
+      "kind": "article",
+      "doi": "10.3389/fmars.2023.1241023",
+      "title": "Turbulent diapycnal fluxes as a pilot Essential Ocean Variable",
+      "authors": [
+        {
+          "given": "Arnaud",
+          "family": "Le Boyer"
+        },
+        {
+          "given": "Nicole",
+          "family": "Couto"
+        },
+        {
+          "given": "Matthew H.",
+          "family": "Alford"
+        },
+        {
+          "given": "Henri F.",
+          "family": "Drake"
+        },
+        {
+          "given": "Cynthia E.",
+          "family": "Bluteau"
+        },
+        {
+          "given": "Kenneth G.",
+          "family": "Hughes"
+        },
+        {
+          "given": "Alberto C.",
+          "family": "Naveira Garabato"
+        },
+        {
+          "given": "Aurélie J.",
+          "family": "Moulin"
+        },
+        {
+          "given": "Thomas",
+          "family": "Peacock"
+        },
+        {
+          "given": "Elizabeth C.",
+          "family": "Fine"
+        },
+        {
+          "given": "Ali",
+          "family": "Mashayek"
+        },
+        {
+          "given": "Laura",
+          "family": "Cimoli"
+        },
+        {
+          "given": "Michael P.",
+          "family": "Meredith"
+        },
+        {
+          "given": "Angelique",
+          "family": "Melet"
+        },
+        {
+          "given": "Ilker",
+          "family": "Fer"
+        },
+        {
+          "given": "Marcus",
+          "family": "Dengler"
+        },
+        {
+          "given": "Craig L.",
+          "family": "Stevens"
+        }
+      ],
+      "venue": "Frontiers in Marine Science",
+      "year": 2023,
+      "month": 11,
+      "volume": "10",
+      "issue": null,
+      "pages": "1241023",
+      "publisher": "Frontiers Media SA",
+      "url": "https://doi.org/10.3389/fmars.2023.1241023",
+      "related_dois": [
+        "10.3389/fmars.2024.1408850"
+      ]
+    },
+    {
+      "id": "10.1175/jpo-d-22-0010.1",
+      "kind": "article",
+      "doi": "10.1175/jpo-d-22-0010.1",
+      "title": "Diapycnal displacement, diffusion, and distortion of tracers in the ocean",
+      "authors": [
+        {
+          "given": "Henri F.",
+          "family": "Drake"
+        },
+        {
+          "given": "Xiaozhou",
+          "family": "Ruan"
+        },
+        {
+          "given": "Raffaele",
+          "family": "Ferrari"
+        }
+      ],
+      "venue": "Journal of Physical Oceanography",
+      "year": 2022,
+      "month": 8,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "publisher": "American Meteorological Society",
+      "url": "https://doi.org/10.1175/jpo-d-22-0010.1",
+      "related_dois": [
+        "10.31223/x59p84"
+      ]
+    },
+    {
+      "id": "10.1175/jpo-d-22-0009.1",
+      "kind": "article",
+      "doi": "10.1175/jpo-d-22-0009.1",
+      "title": "Dynamics of eddying abyssal mixing layers over sloping rough topography",
+      "authors": [
+        {
+          "given": "Henri F.",
+          "family": "Drake"
+        },
+        {
+          "given": "Xiaozhou",
+          "family": "Ruan"
+        },
+        {
+          "given": "Jörn",
+          "family": "Callies"
+        },
+        {
+          "given": "Kelly",
+          "family": "Ogden"
+        },
+        {
+          "given": "Andreas M.",
+          "family": "Thurnherr"
+        },
+        {
+          "given": "Raffaele",
+          "family": "Ferrari"
+        }
+      ],
+      "venue": "Journal of Physical Oceanography",
+      "year": 2022,
+      "month": 7,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "publisher": "American Meteorological Society",
+      "url": "https://doi.org/10.1175/jpo-d-22-0009.1",
+      "related_dois": [
+        "10.31223/x5fc9n"
+      ]
+    },
+    {
+      "id": "10.1007/s10584-022-03347-6",
+      "kind": "article",
+      "doi": "10.1007/s10584-022-03347-6",
+      "title": "A defense of usable climate mitigation science: how science can contribute to social movements",
+      "authors": [
+        {
+          "given": "Henri F.",
+          "family": "Drake",
+          "orcid": "0000-0003-0135-0814"
+        },
+        {
+          "given": "Geoffrey",
+          "family": "Henderson",
+          "orcid": "0000-0001-5483-1713"
+        }
+      ],
+      "venue": "Climatic Change",
+      "year": 2022,
+      "month": 5,
+      "volume": "172",
+      "issue": "1-2",
+      "pages": "10",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s10584-022-03347-6",
+      "related_dois": []
+    },
+    {
+      "id": "10.1029/2021gl095088",
+      "kind": "article",
+      "doi": "10.1029/2021gl095088",
+      "title": "The Influence of Ocean Topography on the Upwelling of Carbon in the Southern Ocean",
+      "authors": [
+        {
+          "given": "Riley X.",
+          "family": "Brady",
+          "orcid": "0000-0002-2309-8245"
+        },
+        {
+          "given": "Mathew E.",
+          "family": "Maltrud"
+        },
+        {
+          "given": "Phillip J.",
+          "family": "Wolfram"
+        },
+        {
+          "given": "Henri F.",
+          "family": "Drake",
+          "orcid": "0000-0003-0135-0814"
+        },
+        {
+          "given": "Nicole S.",
+          "family": "Lovenduski",
+          "orcid": "0000-0001-5893-1009"
+        }
+      ],
+      "venue": "Geophysical Research Letters",
+      "year": 2021,
+      "month": 10,
+      "volume": "48",
+      "issue": "19",
+      "pages": "e2021GL095088",
+      "publisher": "American Geophysical Union (AGU)",
+      "url": "https://doi.org/10.1029/2021gl095088",
+      "related_dois": [
+        "10.1002/essoar.10504951.1"
+      ]
+    },
+    {
+      "id": "10.1088/1748-9326/ac243e",
+      "kind": "article",
+      "doi": "10.1088/1748-9326/ac243e",
+      "title": "A simple model for assessing climate control trade-offs and responding to unanticipated climate outcomes",
+      "authors": [
+        {
+          "given": "Henri F",
+          "family": "Drake",
+          "orcid": "0000-0003-0135-0814"
+        },
+        {
+          "given": "Ronald L",
+          "family": "Rivest"
+        },
+        {
+          "given": "Alan",
+          "family": "Edelman"
+        },
+        {
+          "given": "John",
+          "family": "Deutch"
+        }
+      ],
+      "venue": "Environmental Research Letters",
+      "year": 2021,
+      "month": 9,
+      "volume": "16",
+      "issue": "10",
+      "pages": "104012",
+      "publisher": "IOP Publishing",
+      "url": "https://doi.org/10.1088/1748-9326/ac243e",
+      "related_dois": [
+        "10.31223/osf.io/5bgyc"
+      ]
+    },
+    {
+      "id": "10.1175/jpo-d-19-0313.1",
+      "kind": "article",
+      "doi": "10.1175/jpo-d-19-0313.1",
+      "title": "Abyssal Circulation Driven by Near-Boundary Mixing: Water Mass Transformations and Interior Stratification",
+      "authors": [
+        {
+          "given": "Henri F.",
+          "family": "Drake"
+        },
+        {
+          "given": "Raffaele",
+          "family": "Ferrari"
+        },
+        {
+          "given": "Jörn",
+          "family": "Callies"
+        }
+      ],
+      "venue": "Journal of Physical Oceanography",
+      "year": 2020,
+      "month": 8,
+      "volume": "50",
+      "issue": "8",
+      "pages": "2203-2226",
+      "publisher": "American Meteorological Society",
+      "url": "https://doi.org/10.1175/jpo-d-19-0313.1",
+      "related_dois": [
+        "10.31223/osf.io/djv5h"
+      ]
+    },
+    {
+      "id": "10.1029/2019gl085378",
+      "kind": "article",
+      "doi": "10.1029/2019gl085378",
+      "title": "Evaluating the Performance of Past Climate Model Projections",
+      "authors": [
+        {
+          "given": "Zeke",
+          "family": "Hausfather",
+          "orcid": "0000-0002-2926-0581"
+        },
+        {
+          "given": "Henri F.",
+          "family": "Drake",
+          "orcid": "0000-0003-0135-0814"
+        },
+        {
+          "given": "Tristan",
+          "family": "Abbott",
+          "orcid": "0000-0001-5486-3993"
+        },
+        {
+          "given": "Gavin A.",
+          "family": "Schmidt",
+          "orcid": "0000-0002-2258-0486"
+        }
+      ],
+      "venue": "Geophysical Research Letters",
+      "year": 2020,
+      "month": 1,
+      "volume": "47",
+      "issue": "1",
+      "pages": "e2019GL085378",
+      "publisher": "American Geophysical Union (AGU)",
+      "url": "https://doi.org/10.1029/2019gl085378",
+      "related_dois": []
+    },
+    {
+      "id": "10.31223/osf.io/ahq4p",
+      "kind": "preprint",
+      "doi": "10.31223/osf.io/ahq4p",
+      "title": "Assessing Climate Model Projections of Anthropogenic Warming Patterns",
+      "authors": [
+        {
+          "given": "Henri",
+          "family": "Drake",
+          "orcid": "0000-0003-0135-0814"
+        },
+        {
+          "given": "Tristan",
+          "family": "Abbott"
+        },
+        {
+          "given": "Megan",
+          "family": "Lickley"
+        }
+      ],
+      "venue": "EarthArXiv",
+      "year": 2019,
+      "month": 7,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "publisher": "California Digital Library (CDL)",
+      "url": "https://doi.org/10.31223/osf.io/ahq4p",
+      "related_dois": []
+    },
+    {
+      "id": "10.1016/j.ocemod.2017.11.008",
+      "kind": "article",
+      "doi": "10.1016/j.ocemod.2017.11.008",
+      "title": "Lagrangian ocean analysis: Fundamentals and practices",
+      "authors": [
+        {
+          "given": "Erik",
+          "family": "van Sebille"
+        },
+        {
+          "given": "Stephen M.",
+          "family": "Griffies"
+        },
+        {
+          "given": "Ryan",
+          "family": "Abernathey"
+        },
+        {
+          "given": "Thomas P.",
+          "family": "Adams"
+        },
+        {
+          "given": "Pavel",
+          "family": "Berloff"
+        },
+        {
+          "given": "Arne",
+          "family": "Biastoch"
+        },
+        {
+          "given": "Bruno",
+          "family": "Blanke"
+        },
+        {
+          "given": "Eric P.",
+          "family": "Chassignet"
+        },
+        {
+          "given": "Yu",
+          "family": "Cheng"
+        },
+        {
+          "given": "Colin J.",
+          "family": "Cotter"
+        },
+        {
+          "given": "Eric",
+          "family": "Deleersnijder"
+        },
+        {
+          "given": "Kristofer",
+          "family": "Döös"
+        },
+        {
+          "given": "Henri F.",
+          "family": "Drake"
+        },
+        {
+          "given": "Sybren",
+          "family": "Drijfhout"
+        },
+        {
+          "given": "Stefan F.",
+          "family": "Gary"
+        },
+        {
+          "given": "Arnold W.",
+          "family": "Heemink"
+        },
+        {
+          "given": "Joakim",
+          "family": "Kjellsson"
+        },
+        {
+          "given": "Inga Monika",
+          "family": "Koszalka"
+        },
+        {
+          "given": "Michael",
+          "family": "Lange"
+        },
+        {
+          "given": "Camille",
+          "family": "Lique"
+        },
+        {
+          "given": "Graeme A.",
+          "family": "MacGilchrist"
+        },
+        {
+          "given": "Robert",
+          "family": "Marsh"
+        },
+        {
+          "given": "C. Gabriela",
+          "family": "Mayorga Adame"
+        },
+        {
+          "given": "Ronan",
+          "family": "McAdam"
+        },
+        {
+          "given": "Francesco",
+          "family": "Nencioli"
+        },
+        {
+          "given": "Claire B.",
+          "family": "Paris"
+        },
+        {
+          "given": "Matthew D.",
+          "family": "Piggott"
+        },
+        {
+          "given": "Jeff A.",
+          "family": "Polton"
+        },
+        {
+          "given": "Siren",
+          "family": "Rühs"
+        },
+        {
+          "given": "Syed H.A.M.",
+          "family": "Shah"
+        },
+        {
+          "given": "Matthew D.",
+          "family": "Thomas"
+        },
+        {
+          "given": "Jinbo",
+          "family": "Wang"
+        },
+        {
+          "given": "Phillip J.",
+          "family": "Wolfram"
+        },
+        {
+          "given": "Laure",
+          "family": "Zanna"
+        },
+        {
+          "given": "Jan D.",
+          "family": "Zika"
+        }
+      ],
+      "venue": "Ocean Modelling",
+      "year": 2018,
+      "month": 1,
+      "volume": "121",
+      "issue": null,
+      "pages": "49-75",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.ocemod.2017.11.008",
+      "related_dois": []
+    },
+    {
+      "id": "10.1002/2017gl076045",
+      "kind": "article",
+      "doi": "10.1002/2017gl076045",
+      "title": "Lagrangian Timescales of Southern Ocean Upwelling in a Hierarchy of Model Resolutions",
+      "authors": [
+        {
+          "given": "Henri F.",
+          "family": "Drake",
+          "orcid": "0000-0003-0135-0814"
+        },
+        {
+          "given": "Adele K.",
+          "family": "Morrison",
+          "orcid": "0000-0002-9904-4980"
+        },
+        {
+          "given": "Stephen M.",
+          "family": "Griffies",
+          "orcid": "0000-0002-3711-236X"
+        },
+        {
+          "given": "Jorge L.",
+          "family": "Sarmiento",
+          "orcid": "0000-0001-5219-2604"
+        },
+        {
+          "given": "Wilbert",
+          "family": "Weijer"
+        },
+        {
+          "given": "Alison R.",
+          "family": "Gray",
+          "orcid": "0000-0002-1644-7654"
+        }
+      ],
+      "venue": "Geophysical Research Letters",
+      "year": 2018,
+      "month": 1,
+      "volume": "45",
+      "issue": "2",
+      "pages": "891-898",
+      "publisher": "American Geophysical Union (AGU)",
+      "url": "https://doi.org/10.1002/2017gl076045",
+      "related_dois": []
+    },
+    {
+      "id": "10.1038/s41467-017-00197-0",
+      "kind": "article",
+      "doi": "10.1038/s41467-017-00197-0",
+      "title": "Spiraling pathways of global deep waters to the surface of the Southern Ocean",
+      "authors": [
+        {
+          "given": "Veronica",
+          "family": "Tamsitt",
+          "orcid": "0000-0001-8816-2239"
+        },
+        {
+          "given": "Henri F.",
+          "family": "Drake",
+          "orcid": "0000-0003-0135-0814"
+        },
+        {
+          "given": "Adele K.",
+          "family": "Morrison"
+        },
+        {
+          "given": "Lynne D.",
+          "family": "Talley",
+          "orcid": "0000-0003-1574-729X"
+        },
+        {
+          "given": "Carolina O.",
+          "family": "Dufour"
+        },
+        {
+          "given": "Alison R.",
+          "family": "Gray",
+          "orcid": "0000-0002-1644-7654"
+        },
+        {
+          "given": "Stephen M.",
+          "family": "Griffies"
+        },
+        {
+          "given": "Matthew R.",
+          "family": "Mazloff"
+        },
+        {
+          "given": "Jorge L.",
+          "family": "Sarmiento"
+        },
+        {
+          "given": "Jinbo",
+          "family": "Wang"
+        },
+        {
+          "given": "Wilbert",
+          "family": "Weijer"
+        }
+      ],
+      "venue": "Nature Communications",
+      "year": 2017,
+      "month": 8,
+      "volume": "8",
+      "issue": "1",
+      "pages": "172",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1038/s41467-017-00197-0",
+      "related_dois": [
+        "10.1038/s41467-017-02105-y"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+---
+import Base from '../layouts/Base.astro';
+import Media from '../components/Media.astro';
+import { getCollection, getEntry, render } from 'astro:content';
+import { url } from '../lib/url';
+import { photoExists } from '../lib/people';
+
+const home = await getEntry('pages', 'home');
+if (!home) throw new Error('content/pages/home.md is missing');
+const { Content } = await render(home);
+const projects = (await getCollection('projects', (p) => p.data.status === 'active')).sort((a, b) => a.data.order - b.data.order);
+const news = (await getCollection('news')).sort((a, b) => +b.data.date - +a.data.date).slice(0, 3);
+const [latestPhoto, ...pastPhotos] = home.data.photos;
+---
+<Base>
+  <h1>Lab mission</h1>
+  <div class="prose lead"><Content /></div>
+  {latestPhoto && <Media image={latestPhoto.src} caption={latestPhoto.caption} alt="Group photo" />}
+
+  <h2>Current research areas</h2>
+  <div class="grid grid-3">
+    {projects.map((p) => (
+      <a class="card" href={url(`research/${p.id}/`)}>
+        {photoExists(p.data.image) && <img class="cover" src={url(p.data.image!)} alt="" loading="lazy" />}
+        {!photoExists(p.data.image) && photoExists(p.data.video) && <video class="cover" src={url(p.data.video!)} muted loop autoplay playsinline style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px"></video>}
+        <p class="eyebrow">{p.data.short_title ?? 'Research'}</p>
+        <h3>{p.data.title}</h3>
+        <p class="muted">{p.data.summary}</p>
+      </a>
+    ))}
+  </div>
+
+  <h2>Recent news</h2>
+  {news.map((n) => (
+    <div class="news-item">
+      <span class="tag">{n.data.type}</span> <span class="muted">{n.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</span>
+      <h3><a href={url(`news/${n.id}/`)}>{n.data.title}</a></h3>
+    </div>
+  ))}
+  <p><a href={url('news/')}>All news →</a></p>
+
+  {pastPhotos.length > 0 && <>
+    <h2>Previous group pictures</h2>
+    {pastPhotos.map((ph) => <Media image={ph.src} caption={ph.caption} alt="Group photo" />)}
+  </>}
+</Base>

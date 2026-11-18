@@ -1,0 +1,70 @@
+---
+import 'katex/dist/katex.min.css';
+import '../styles/global.css';
+import { url } from '../lib/url';
+
+interface Props { title?: string; description?: string; }
+const { title, description = 'The Ocean and Climate Dynamics group at UC Irvine studies the fluid dynamics of the ocean and how they shape the evolution of the Earth system.' } = Astro.props;
+const siteName = 'Ocean & Climate Dynamics @ UCI';
+// Set automatically inside GitHub Actions (e.g. "owner/repo"); used for the "edit on GitHub" link.
+const repo = process.env.GITHUB_REPOSITORY;
+const fullTitle = title ? `${title} · ${siteName}` : siteName;
+
+const nav = [
+  ['Overview', ''],
+  ['Research', 'research/'],
+  ['People', 'people/'],
+  ['Publications', 'publications/'],
+  ['News', 'news/'],
+  ['Opportunities', 'opportunities/'],
+  ['Resources', 'resources/'],
+];
+const here = Astro.url.pathname.replace(import.meta.env.BASE_URL.replace(/\/$/, ''), '').replace(/^\//, '');
+const active = (p: string) => (p === '' ? here === '' : here.startsWith(p));
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href={url()}>
+          <span class="brand-title">Ocean &amp; Climate Dynamics</span>
+          <span class="brand-sub">UC Irvine · Department of Earth System Science</span>
+        </a>
+        <button class="menu-btn" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">☰</button>
+        <nav id="main-nav" class="menu" aria-label="Main">
+          {nav.map(([label, path]) => (
+            <a href={url(path)} aria-current={active(path) ? 'page' : undefined}>{label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="wrap">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>Ocean and Climate Dynamics group · PI: Henri F. Drake · Department of Earth System Science, University of California, Irvine</p>
+        {repo && <p><a href={`https://github.com/${repo}`}>Edit this site on GitHub</a> — see the README for how to contribute.</p>}
+      </div>
+    </footer>
+    <script>
+      const btn = document.querySelector('.menu-btn');
+      const nav = document.getElementById('main-nav');
+      btn?.addEventListener('click', () => {
+        const open = nav?.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(!!open));
+      });
+    </script>
+  </body>
+</html>

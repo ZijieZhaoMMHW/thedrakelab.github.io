@@ -1,0 +1,12 @@
+# Publications that aren't on ORCID (or need to be listed differently).
+# Each entry shows up on the Publications page exactly as written here.
+# kind: article | preprint | data | software | other
+#
+# - title: An example book chapter title
+#   authors: [Henri F. Drake, Jane Doe]
+#   venue: Book Title (eds. A. Editor), Publisher
+#   year: 2024
+#   kind: other
+#   url: https://example.org/chapter
+#   doi: 10.0000/example        # optional
+[]

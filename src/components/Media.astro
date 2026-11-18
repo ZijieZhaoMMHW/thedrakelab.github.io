@@ -1,0 +1,19 @@
+---
+// A figure that shows an image or a video, with an optional Markdown caption.
+import { url } from '../lib/url';
+import { photoExists } from '../lib/people';
+import { marked } from '../lib/inline-md';
+interface Props { image?: string | null; video?: string | null; caption?: string | null; alt?: string; }
+const { image, video, caption, alt = '' } = Astro.props;
+const show = (p?: string | null) => p && photoExists(p);
+---
+{(show(image) || show(video)) && (
+  <figure>
+    {show(video) ? (
+      <video src={url(video!)} controls muted loop playsinline preload="metadata"></video>
+    ) : (
+      <img src={url(image!)} alt={alt} loading="lazy" />
+    )}
+    {caption && <figcaption set:html={marked(caption)} />}
+  </figure>
+)}

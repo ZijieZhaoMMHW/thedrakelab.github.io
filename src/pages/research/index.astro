@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { url } from '../../lib/url';
+import { photoExists } from '../../lib/people';
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+const active = projects.filter((p) => p.data.status === 'active');
+const past = projects.filter((p) => p.data.status === 'past');
+---
+<Base title="Research">
+  <h1>Research</h1>
+  <p class="lead prose">We use a hierarchy of ocean and climate models—from pen-and-paper theory to comprehensive Earth system simulations—to understand how ocean dynamics shape the climate system.</p>
+  <div class="grid grid-3">
+    {active.map((p) => (
+      <a class="card" href={url(`research/${p.id}/`)}>
+        {photoExists(p.data.image) && <img class="cover" src={url(p.data.image!)} alt="" loading="lazy" />}
+        <p class="eyebrow">{p.data.short_title ?? 'Research'}</p>
+        <h3>{p.data.title}</h3>
+        <p class="muted">{p.data.summary}</p>
+      </a>
+    ))}
+  </div>
+  {past.length > 0 && <>
+    <h2>Past projects</h2>
+    <ul>{past.map((p) => <li><a href={url(`research/${p.id}/`)}>{p.data.title}</a></li>)}</ul>
+  </>}
+</Base>

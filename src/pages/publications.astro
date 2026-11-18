@@ -1,0 +1,120 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { url } from '../lib/url';
+import { loadWorks, matchMember, formatAuthor, toBibtex } from '../lib/publications';
+
+const people = await getCollection('people');
+const works = loadWorks();
+const tabOf = (k: string) => (k === 'data' || k === 'software' ? 'data' : k === 'preprint' ? 'preprint' : 'paper');
+const counts = { paper: 0, preprint: 0, data: 0 };
+works.forEach((w) => counts[tabOf(w.kind) as keyof typeof counts]++);
+const years = [...new Set(works.map((w) => w.year).filter(Boolean))].sort((a, b) => b! - a!);
+const memberIds = new Set<string>();
+const rows = works.map((w) => {
+  const authors = w.authors.map((a) => {
+    const m = matchMember(a, people);
+    if (m) memberIds.add(m);
+    return { name: formatAuthor(a), member: m };
+  });
+  const cite = [w.venue, w.volume && `${w.volume}${w.issue ? `(${w.issue})` : ''}`, w.pages].filter(Boolean).join(', ');
+  return {
+    w, authors, cite, tab: tabOf(w.kind),
+    members: authors.map((a) => a.member).filter(Boolean).join(' '),
+    search: [w.title, w.venue, w.doi, ...w.authors.map((a) => `${a.given} ${a.family}`)].join(' ').toLowerCase(),
+  };
+});
+const memberOptions = people.filter((p) => memberIds.has(p.id)).sort((a, b) => a.data.name.localeCompare(b.data.name));
+const kindLabel: Record<string, string> = { data: 'Dataset', software: 'Software', preprint: 'Preprint', other: '' };
+---
+<Base title="Publications" description="Publications, preprints, datasets, and code from the Ocean and Climate Dynamics group at UC Irvine.">
+  <h1>Publications</h1>
+  <p class="muted">Updated automatically from <a href="https://orcid.org/0000-0003-0135-0814">ORCID</a>. Group members are in <b>bold</b>. See also <a href="https://scholar.google.com/citations?hl=en&user=PToRK3cAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>.</p>
+
+  <div class="pub-controls" role="search">
+    <div class="pub-tabs" role="group" aria-label="Type">
+      <button type="button" data-tab="paper" aria-pressed="true">Papers <span class="count">({counts.paper})</span></button>
+      <button type="button" data-tab="preprint" aria-pressed="false">Preprints <span class="count">({counts.preprint})</span></button>
+      <button type="button" data-tab="data" aria-pressed="false">Data &amp; Code <span class="count">({counts.data})</span></button>
+      <button type="button" data-tab="all" aria-pressed="false">All</button>
+    </div>
+    <input type="search" id="pub-q" placeholder="Search titles, authors, journals…" aria-label="Search publications" />
+    <select id="pub-year" aria-label="Year">
+      <option value="">All years</option>
+      {years.map((y) => <option value={String(y)}>{y}</option>)}
+    </select>
+    <select id="pub-member" aria-label="Group member">
+      <option value="">Any group member</option>
+      {memberOptions.map((p) => <option value={p.id}>{p.data.name}</option>)}
+    </select>
+  </div>
+
+  <p id="pub-count" class="count" aria-live="polite"></p>
+  <ol class="pub-list" id="pub-list">
+    {rows.map(({ w, authors, cite, tab, members, search }) => (
+      <li class="pub" data-tab={tab} data-year={w.year ?? ''} data-members={members} data-search={search}>
+        <div class="title">
+          {w.url ? <a href={w.url}>{w.title}</a> : w.title}
+          {kindLabel[w.kind] && <> <span class="tag">{kindLabel[w.kind]}</span></>}
+        </div>
+        <div class="authors">
+          {authors.map((a, i) => <>{i > 0 && ', '}{a.member ? <b>{a.name}</b> : a.name}</>)}
+        </div>
+        <div class="venue">{w.year && <>({w.year}) </>}<em>{cite}</em></div>
+        <div class="actions">
+          {w.doi && <a href={`https://doi.org/${w.doi}`}>doi:{w.doi}</a>}
+          <button type="button" class="copy-bib" data-bib={toBibtex(w)}>Copy BibTeX</button>
+        </div>
+      </li>
+    ))}
+  </ol>
+  <p id="pub-empty" class="empty" hidden>No matching publications.</p>
+
+  <script>
+    const list = document.getElementById('pub-list')!;
+    const items = [...list.querySelectorAll<HTMLLIElement>('.pub')];
+    const q = document.getElementById('pub-q') as HTMLInputElement;
+    const year = document.getElementById('pub-year') as HTMLSelectElement;
+    const member = document.getElementById('pub-member') as HTMLSelectElement;
+    const tabs = [...document.querySelectorAll<HTMLButtonElement>('.pub-tabs button')];
+    const count = document.getElementById('pub-count')!;
+    const empty = document.getElementById('pub-empty')!;
+    const params = new URLSearchParams(location.search);
+    let tab = params.get('type') ?? 'paper';
+    q.value = params.get('q') ?? '';
+    year.value = params.get('year') ?? '';
+    member.value = params.get('member') ?? '';
+
+    function apply() {
+      const terms = q.value.toLowerCase().split(/\s+/).filter(Boolean);
+      let n = 0;
+      for (const li of items) {
+        const ok = (tab === 'all' || li.dataset.tab === tab)
+          && (!year.value || li.dataset.year === year.value)
+          && (!member.value || li.dataset.members!.split(' ').includes(member.value))
+          && terms.every((t) => li.dataset.search!.includes(t));
+        li.hidden = !ok;
+        if (ok) n++;
+      }
+      tabs.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.tab === tab)));
+      count.textContent = `${n} item${n === 1 ? '' : 's'}`;
+      empty.hidden = n > 0;
+      const p = new URLSearchParams();
+      if (tab !== 'paper') p.set('type', tab);
+      if (q.value) p.set('q', q.value);
+      if (year.value) p.set('year', year.value);
+      if (member.value) p.set('member', member.value);
+      history.replaceState(null, '', p.toString() ? `?${p}` : location.pathname);
+    }
+    tabs.forEach((b) => b.addEventListener('click', () => { tab = b.dataset.tab!; apply(); }));
+    [q, year, member].forEach((el) => el.addEventListener('input', apply));
+    list.addEventListener('click', async (e) => {
+      const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('.copy-bib');
+      if (!btn) return;
+      try { await navigator.clipboard.writeText(btn.dataset.bib!); btn.textContent = 'Copied!'; }
+      catch { btn.textContent = 'Copy failed'; }
+      setTimeout(() => (btn.textContent = 'Copy BibTeX'), 1500);
+    });
+    apply();
+  </script>
+</Base>
