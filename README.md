@@ -57,9 +57,38 @@ projects: [ice-ocean]  # optional: file names (without .md) from content/project
 next:                  # alumni only: where you went next, e.g. "Postdoc, MIT"
 ---
 
-Jane studies the dynamics of Antarctic Bottom Water using high-resolution
-MOM6 simulations. Before joining the group she ... (2–5 sentences, third person)
+[When you joined the group, and in what role.]
+[Where you are coming from: your academic background and training.]
+[In 1–3 sentences: what is your area (or areas) of research?]
+[Optional: one human detail — a hobby, a fun fact.]
 ```
+
+**Writing your bio.** Everything below the closing `---` is your bio. Replace each bracketed line
+above with real sentences, in this order:
+
+1. **When you joined the group**, and as what. *"Jane joined the group as a PhD student in autumn 2025."*
+2. **Where you are coming from** — degrees, institutions, and any prior research training.
+   *"She holds a B.S. in Applied Physics from Cal Poly, where she worked on turbulence in
+   stratified flows."*
+3. **What you work on**, in one to three sentences. This is the part visitors actually read, so
+   spend your effort here. Name the question, not just the tools.
+   *"Her research asks how Antarctic Bottom Water forms and how quickly it spreads into the deep
+   ocean. She runs high-resolution MOM6 simulations of the Weddell Sea and compares them against
+   float observations."*
+4. **Optional: one human detail.** *"Outside the lab she races sailboats and bakes aggressively
+   ambitious bread."*
+
+A few conventions:
+
+- **Write in the third person** ("Jane studies…", not "I study…"), so the People page reads
+  consistently. Use your own name or pronouns rather than "the author".
+- **Aim for 3–6 sentences.** Much shorter looks like a stub; much longer unbalances the People grid,
+  since every card in a row stretches to match the tallest one.
+- **Assume a smart reader from outside your field** — a prospective student, a journalist, a
+  colleague in another department. If you use a term like *diapycnal* or *water-mass transformation*,
+  gloss it in half a clause or pick a plainer word.
+- **Keep it current.** If your focus shifts, edit your own file — that is the whole point of one
+  file per person.
 
 **Leaving the group?** Change `status: current` to `status: alumni`, and fill in `end:` and `next:`. Please don't delete your file — it moves you to the Alumni list automatically.
 
@@ -175,7 +204,8 @@ src/             page templates and styles (rarely needs editing)
 
 ## Style guidelines
 
-- Bios: third person, 2–5 sentences, focus on research (a fun fact at the end is welcome).
+- Bios: third person, 3–6 sentences, focused on your research (a fun fact at the end is welcome).
+  See "Writing your bio" under **File formats** for the structure to follow.
 - Dates: `YYYY-MM` (or `YYYY`) for start/end.
 - File names: lowercase, hyphens instead of spaces, no special characters.
 
