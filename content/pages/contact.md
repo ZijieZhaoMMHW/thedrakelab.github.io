@@ -15,14 +15,11 @@ See the [Opportunities](/opportunities) page for what is currently open and what
 
 ## Journalists and media
 
-Henri welcomes press enquiries and is glad to do background conversations, interviews, or a quick
-sanity-check on a paper you have been sent. If you are working to a same-day deadline, put **DEADLINE**
+Henri welcomes press enquiries and is glad to do interviews. If you are working to a same-day deadline, put **DEADLINE**
 and your time zone in the subject line.
 
-He can speak to: how the deep ocean circulates and mixes; how warm ocean water melts Antarctic and
-Greenland ice from below; sea level rise driven by ocean warming and ice loss; marine heatwaves; tipping
-points in ocean circulation and ice sheets; and how climate models are built, what they get right, and
-how well past projections have held up.
+He can speak to deep ocean circulation and mixing, Antarctic and Greenland ice melt, sea level rise,
+marine heatwaves, climate tipping points, and how climate models work.
 
 He is **not** the right person for hurricanes and day-to-day weather, ocean ecology or fisheries, ocean
 acidification chemistry, or climate policy and economics — but he is happy to point you to colleagues who are.
