@@ -129,6 +129,9 @@ The Publications page is **generated from ORCID** — you usually don't need to 
 - Works are sorted into **Papers**, **Preprints**, and **Data & Code** (Zenodo, figshare, etc.) automatically.
 - Preprints that have been published only show up once, *as long as the preprint and the paper are combined on ORCID* ("Combine" in the Works section of your ORCID record).
 - Group members' names are **bolded** automatically when their name (or ORCID iD) matches a file in `content/people/`.
+  Everyone except the PI (the person with `role: pi`) also gets a dagger, so the PI and the rest of the group are
+  easy to tell apart. A work whose **first** author is in the group is marked with a blue rail in the left margin,
+  and the "First author from the group" button filters the list down to those.
 - `data/publications.json` is generated — **don't edit it by hand**; it gets overwritten.
 - To **add** something ORCID doesn't have (e.g. a book chapter), add an entry to `data/publications-extra.yaml`.
 - To **hide** something, add its DOI on a new line in `data/publications-exclude.txt`.

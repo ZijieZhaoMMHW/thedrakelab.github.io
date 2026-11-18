@@ -36,7 +36,7 @@ const kindLabel: Record<string, string> = { data: 'Dataset', software: 'Software
   <p class="pub-legend">
     <span><b>{piName}</b></span>
     <span><b>Group member<span class="dagger">&#8224;</span></b></span>
-    <span class="key-led">First author from the group</span>
+    <button type="button" id="pub-led" class="key-led" aria-pressed="false" title="Show only papers whose first author is in the group">First author from the group</button>
   </p>
 
   <div class="pub-controls" role="search">
@@ -60,7 +60,7 @@ const kindLabel: Record<string, string> = { data: 'Dataset', software: 'Software
   <p id="pub-count" class="count" aria-live="polite"></p>
   <ol class="pub-list" id="pub-list">
     {rows.map(({ w, authors, cite, tab, members, search, led }) => (
-      <li class:list={['pub', led && 'led']} data-tab={tab} data-year={w.year ?? ''} data-members={members} data-search={search}>
+      <li class:list={['pub', led && 'led']} data-tab={tab} data-year={w.year ?? ''} data-members={members} data-search={search} data-led={led ? '1' : '0'}>
         <div class="title">
           {w.url ? <a href={w.url}>{w.title}</a> : w.title}
           {kindLabel[w.kind] && <> <span class="tag">{kindLabel[w.kind]}</span></>}
@@ -89,10 +89,12 @@ const kindLabel: Record<string, string> = { data: 'Dataset', software: 'Software
     const year = document.getElementById('pub-year') as HTMLSelectElement;
     const member = document.getElementById('pub-member') as HTMLSelectElement;
     const tabs = [...document.querySelectorAll<HTMLButtonElement>('.pub-tabs button')];
+    const ledBtn = document.getElementById('pub-led') as HTMLButtonElement;
     const count = document.getElementById('pub-count')!;
     const empty = document.getElementById('pub-empty')!;
     const params = new URLSearchParams(location.search);
     let tab = params.get('type') ?? 'paper';
+    let ledOnly = params.get('led') === '1';
     q.value = params.get('q') ?? '';
     year.value = params.get('year') ?? '';
     member.value = params.get('member') ?? '';
@@ -102,6 +104,7 @@ const kindLabel: Record<string, string> = { data: 'Dataset', software: 'Software
       let n = 0;
       for (const li of items) {
         const ok = (tab === 'all' || li.dataset.tab === tab)
+          && (!ledOnly || li.dataset.led === '1')
           && (!year.value || li.dataset.year === year.value)
           && (!member.value || li.dataset.members!.split(' ').includes(member.value))
           && terms.every((t) => li.dataset.search!.includes(t));
@@ -109,16 +112,19 @@ const kindLabel: Record<string, string> = { data: 'Dataset', software: 'Software
         if (ok) n++;
       }
       tabs.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.tab === tab)));
+      ledBtn.setAttribute('aria-pressed', String(ledOnly));
       count.textContent = `${n} item${n === 1 ? '' : 's'}`;
       empty.hidden = n > 0;
       const p = new URLSearchParams();
       if (tab !== 'paper') p.set('type', tab);
+      if (ledOnly) p.set('led', '1');
       if (q.value) p.set('q', q.value);
       if (year.value) p.set('year', year.value);
       if (member.value) p.set('member', member.value);
       history.replaceState(null, '', p.toString() ? `?${p}` : location.pathname);
     }
     tabs.forEach((b) => b.addEventListener('click', () => { tab = b.dataset.tab!; apply(); }));
+    ledBtn.addEventListener('click', () => { ledOnly = !ledOnly; apply(); });
     [q, year, member].forEach((el) => el.addEventListener('input', apply));
     list.addEventListener('click', async (e) => {
       const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('.copy-bib');
