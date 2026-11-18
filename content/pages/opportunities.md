@@ -4,7 +4,7 @@ description: Open positions for prospective postdocs, PhD students, and undergra
 section_nav: true
 ---
 
-See employment opportunities for prospective postdocs, PhD students, and undergraduate research assistants below. Prof. Drake's expertise is best suited to mentoring scientists who are interested in careers in oceanographic or climate research.
+See employment opportunities for prospective postdocs, PhD students, and undergraduate research assistants below. We are best suited to mentoring scientists who are interested in careers in oceanographic or climate research.
 
 ## PhD students
 
@@ -12,7 +12,9 @@ See employment opportunities for prospective postdocs, PhD students, and undergr
 
 **(A) Coupled Tipping Dynamics of Ocean Circulation and Ice Sheets:** Advancing projections and understanding of climate tipping points by developing and running next-generation Earth System Models with synchronous coupling to dynamic ice sheets (Greenland and Antarctica) – [see one-page description](/files/NSF-CAREER-PhD-Position-Advertisement.pdf). This project is fully funded by external research grants, meaning the student earns their stipend and tuition by working as a Graduate Student Researcher.
 
-**(B) Theory of Antarctic Ice-Ocean Interactions:** Idealized modeling of two-way interactions between multi-scale Southern Ocean dynamics and the Cryosphere (i.e. explicitly resolved grounded ice sheets, floating ice shelves, icebergs, and sea ice). This project is more open-ended but also not yet funded by an external research grant, meaning the student working on this project may need to apply for their own fellowships or work as a Teaching Assistant to fill funding gaps, unless Prof. Drake secures dedicated funding. Students interested in this position are encouraged to apply for external fellowships such as the [NSF GRFP](https://www.nsf.gov/funding/initiatives/grfp) – Prof. Drake may be able to provide constructive feedback on your application. Students bringing their own external funding for this project will be viewed more favorably in admissions decisions.
+**(B) Theory of Antarctic Ice-Ocean Interactions:** Idealized modeling of two-way interactions between multi-scale Southern Ocean dynamics and the Cryosphere (i.e. explicitly resolved grounded ice sheets, floating ice shelves, icebergs, and sea ice). This project is more open-ended and is not yet funded by an external research grant, meaning a student on this project would be supported through some combination of teaching assistantships, fellowships, and research funding as we secure it. Teaching assistantships are paid positions that most ESS PhD students hold at some point; they carry a stipend, tuition, and health insurance. Funding is the thing we discuss most carefully before anyone accepts an offer, and we would rather talk about it early than have you guess — so ask us directly.
+
+Students interested in this position are encouraged to apply for external fellowships such as the [NSF GRFP](https://www.nsf.gov/funding/initiatives/grfp) – Henri may be able to provide constructive feedback on your application. Students bringing their own external funding for this project will be viewed more favorably in admissions decisions.
 
 Minimum requirements for joining our group are:
 
@@ -43,7 +45,7 @@ Note: Federal postdoc fellowship opportunities are currently in flux. Some may b
 
 ## Undergraduate Research Opportunities (UROPs)
 
-Research in the *Ocean and Climate Dynamics* group is computational or theoretical in nature, requiring mathematical techniques well beyond those covered by the ESS major requirements. Therefore, students interested in doing research in the group are encouraged to review the [UROP Research Roadmap](https://urop.uci.edu/research-roadmap/) and reach out to Prof. Drake at [hfdrake@uci.edu](mailto:hfdrake@uci.edu) as soon as this interest materializes so that he can provide recommendations for a path through the curriculum that will prepare them for success in research.
+Research in the *Ocean and Climate Dynamics* group is computational or theoretical in nature, requiring mathematical techniques well beyond those covered by the ESS major requirements. Therefore, students interested in doing research in the group are encouraged to review the [UROP Research Roadmap](https://urop.uci.edu/research-roadmap/) and reach out to Henri at [hfdrake@uci.edu](mailto:hfdrake@uci.edu) as soon as this interest materializes so that he can provide recommendations for a path through the curriculum that will prepare them for success in research.
 
 **Coursework expectations:** Undergraduate students doing research in the group are expected to have:
 
@@ -57,9 +59,9 @@ Applied Physics and Applied Math majors are encouraged to inquire about research
 
 **Unfunded opportunities (for ESS 199 credit):** Enrollment in ESS 199 is only offered to students prepared to make a major commitment—equivalent to at least 12 units of research credit (ESS 199) over at least three quarters and/or work towards a senior thesis (ESS 198) or honors thesis (ESS 198H).
 
-**Curricular recommendations:** Earth System Science (ESS) majors interested in pursuing *Ocean and Climate Dynamics* research or attending graduate school in a related discipline are strongly encouraged to take quantitative courses beyond the minimum requirements of the major. In particular, Prof. Drake recommends:
+**Curricular recommendations:** Earth System Science (ESS) majors interested in pursuing *Ocean and Climate Dynamics* research or attending graduate school in a related discipline are strongly encouraged to take quantitative courses beyond the minimum requirements of the major. In particular, we recommend:
 
 1. taking *Linear Algebra (Math 3A)* and *Elementary Differential Equations (Math 3D)*;
 2. minoring or double-majoring in [Applied and Computational Mathematics](https://catalogue.uci.edu/schoolofphysicalsciences/departmentofmathematics/appliedandcomputationalmathematics_bs/) or [Applied Physics](https://catalogue.uci.edu/schoolofphysicalsciences/departmentofphysicsandastronomy/appliedphysics_bs/);
 3. taking all of the undergraduate climate dynamics courses, i.e. *Physical Oceanography (ESS 130)*, *Atmospheric Dynamics (ESS 122)*, and *Global Climate System: Processes and Change (number TBD)*;
-4. enrolling in graduate-level ESS courses, such as the 4-unit *Physical Oceanography (ESS 230)*, the 1-unit *Climate Dynamics (ESS 280)* course, and any of Professor Drake's other ESS 280 seminars.
+4. enrolling in graduate-level ESS courses, such as the 4-unit *Physical Oceanography (ESS 230)*, the 1-unit *Climate Dynamics (ESS 280)* course, and any of Henri's other ESS 280 seminars.
